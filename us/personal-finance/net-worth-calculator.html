@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Net Worth Calculator | Financial Calculators</title>
+  <meta name="description" content="Calculate your net worth by comparing assets and liabilities. Track your financial progress over time.">
+  <link rel="canonical" href="https://financialcalculators.com/us/personal-finance/net-worth-calculator.html">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Net Worth Calculator",
+  "description": "Calculate your net worth by comparing assets and liabilities. Track your financial progress over time.",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+</head>
+<body>
+  <main class="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/index.html">Home</a>
+      <span class="breadcrumb-separator">/</span>
+      <a href="/us/personal-finance/">Personal Finance</a>
+      <span class="breadcrumb-separator">/</span>
+      <span class="breadcrumb-current">Net Worth Calculator</span>
+    </nav>
+
+      <header class="page-header">
+        <h1>Net Worth Calculator - Know Your Financial Position</h1>
+        <p>Free calculator with instant results. No signup required.</p>
+      </header>
+
+      <!-- Above-fold Ad Placeholder -->
+      <div class="ad-placeholder ad-above-fold">
+        <span>Advertisement</span>
+        Ad space available
+      </div>
+
+      <div class="calculator-layout">
+        <!-- Calculator Form -->
+        <div class="card" id="networthcalculator">
+          <div class="card-header">
+            <h2 class="card-title">💎 Net Worth Calculator</h2>
+            <p class="card-subtitle">Enter your details below</p>
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label class="form-label" for="cash">Cash & Checking</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input type="number" id="cash" class="form-input" value="10000" min="0" step="100">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="investments">Investments</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input type="number" id="investments" class="form-input" value="50000" min="0" step="100">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="retirement">Retirement Accounts</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input type="number" id="retirement" class="form-input" value="100000" min="0" step="100">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="realEstate">Real Estate</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input type="number" id="realEstate" class="form-input" value="300000" min="0" step="100">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="vehicles">Vehicles</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input type="number" id="vehicles" class="form-input" value="20000" min="0" step="100">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="mortgage">Mortgage</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input type="number" id="mortgage" class="form-input" value="250000" min="0" step="100">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="carLoans">Car Loans</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input type="number" id="carLoans" class="form-input" value="15000" min="0" step="100">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="studentLoans">Student Loans</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input type="number" id="studentLoans" class="form-input" value="30000" min="0" step="100">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="creditCards">Credit Cards</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input type="number" id="creditCards" class="form-input" value="5000" min="0" step="100">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results-card">
+          <h3 class="results-title">Results</h3>
+          <div class="results-breakdown">
+              <div class="breakdown-item">
+                <span class="breakdown-label">Total Assets</span>
+                <span class="breakdown-value" id="totalAssets">$0.00</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">Total Liabilities</span>
+                <span class="breakdown-value" id="totalLiabilities">$0.00</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">Net Worth</span>
+                <span class="breakdown-value" id="netWorth">$0.00</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">Debt to Asset Ratio</span>
+                <span class="breakdown-value" id="debtToAsset">$0.00</span>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mid-content Ad Placeholder -->
+      <div class="ad-placeholder ad-mid-content">
+        <span>Advertisement</span>
+        Ad space available
+      </div>
+
+      <!-- SEO Content -->
+      <section class="seo-content">
+        <h2>About Net Worth Calculator</h2>
+        <p>Understand your complete financial picture with our net worth calculator. Input all your assets and liabilities to calculate your net worth.</p>
+        <p>Use this calculator to make informed financial decisions. Adjust the inputs to see how different scenarios affect your results. All calculations are performed locally in your browser for privacy and security.</p>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="seo-content faq-section">
+        <h2>Frequently Asked Questions</h2>
+          <div class="faq-item">
+            <h3 class="faq-question">What is net worth?</h3>
+            <p class="faq-answer">Net worth is the difference between what you own (assets) and what you owe (liabilities).</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">What is a good net worth?</h3>
+            <p class="faq-answer">Net worth varies by age. A common benchmark is having your annual salary saved by age 30.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">How often should I calculate net worth?</h3>
+            <p class="faq-answer">Monthly or quarterly tracking helps you see trends.</p>
+          </div>
+      </section>
+
+      <!-- Related Calculators -->
+      <section class="related-section">
+        <h2>Related Calculators</h2>
+        <div class="related-grid">
+          <a href="/us/personal-finance/budget-calculator.html" class="related-card">
+            <div class="related-icon">📋</div>
+            <div class="related-info">
+              <h4>Budget Calculator</h4>
+              <p>Create a personalized budget based on your income and expens...</p>
+            </div>
+          </a>
+          <a href="/us/personal-finance/emergency-fund-calculator.html" class="related-card">
+            <div class="related-icon">🛡️</div>
+            <div class="related-info">
+              <h4>Emergency Fund Calculator</h4>
+              <p>Calculate how much emergency savings you need. Factor in mon...</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Bottom Ad Placeholder -->
+      <div class="ad-placeholder ad-bottom">
+        <span>Advertisement</span>
+        Ad space available
+      </div>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="../js/main.js"></script>
+  <script src="../js/formulas/net-worth-formula.js"></script>
+  <script src="../js/calculators/net-worth-calculator.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retirement Income Calculator | Financial Calculators</title>
+  <meta name="description" content="Estimate your monthly retirement income from savings, Social Security, and pensions. Plan your retirement budget.">
+  <link rel="canonical" href="https://financialcalculators.com/us/retirement-calculators/retirement-income-calculator.html">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Retirement Income Calculator",
+  "description": "Estimate your monthly retirement income from savings, Social Security, and pensions. Plan your retirement budget.",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+</head>
+<body>
+  <main class="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/index.html">Home</a>
+      <span class="breadcrumb-separator">/</span>
+      <a href="/us/retirement-calculators/">Retirement Calculators</a>
+      <span class="breadcrumb-separator">/</span>
+      <span class="breadcrumb-current">Retirement Income Calculator</span>
+    </nav>
+
+      <header class="page-header">
+        <h1>Retirement Income Calculator - Monthly Income Estimator</h1>
+        <p>Free calculator with instant results. No signup required.</p>
+      </header>
+
+      <!-- Above-fold Ad Placeholder -->
+      <div class="ad-placeholder ad-above-fold">
+        <span>Advertisement</span>
+        Ad space available
+      </div>
+
+      <div class="calculator-layout">
+        <!-- Calculator Form -->
+        <div class="card" id="retirementincomecalculator">
+          <div class="card-header">
+            <h2 class="card-title">💵 Retirement Income Calculator</h2>
+            <p class="card-subtitle">Enter your details below</p>
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label class="form-label" for="retirementSavings">Retirement Savings</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input type="number" id="retirementSavings" class="form-input" value="1000000" min="0" step="100">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="socialSecurity">Monthly Social Security</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input type="number" id="socialSecurity" class="form-input" value="2000" min="0" step="100">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="pension">Monthly Pension</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input type="number" id="pension" class="form-input" value="0" min="0" step="100">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="otherIncome">Other Monthly Income</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input type="number" id="otherIncome" class="form-input" value="0" min="0" step="100">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="withdrawalRate">Withdrawal Rate</label>
+              <div class="input-group">
+                <input type="number" id="withdrawalRate" class="form-input has-suffix" value="4" min="0" max="100" step="0.01">
+                <span class="input-suffix">%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results-card">
+          <h3 class="results-title">Results</h3>
+          <div class="results-breakdown">
+              <div class="breakdown-item">
+                <span class="breakdown-label">Total Monthly Income</span>
+                <span class="breakdown-value" id="totalMonthlyIncome">$0.00</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">Savings Withdrawal</span>
+                <span class="breakdown-value" id="savingsWithdrawal">$0.00</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">Annual Income</span>
+                <span class="breakdown-value" id="annualIncome">$0.00</span>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mid-content Ad Placeholder -->
+      <div class="ad-placeholder ad-mid-content">
+        <span>Advertisement</span>
+        Ad space available
+      </div>
+
+      <!-- SEO Content -->
+      <section class="seo-content">
+        <h2>About Retirement Income Calculator</h2>
+        <p>Plan your retirement budget with confidence using our income calculator. Estimate your total monthly retirement income from all sources.</p>
+        <p>Use this calculator to make informed financial decisions. Adjust the inputs to see how different scenarios affect your results. All calculations are performed locally in your browser for privacy and security.</p>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="seo-content faq-section">
+        <h2>Frequently Asked Questions</h2>
+          <div class="faq-item">
+            <h3 class="faq-question">How much retirement income will I need?</h3>
+            <p class="faq-answer">Most retirees need 70-80% of pre-retirement income.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">When should I take Social Security?</h3>
+            <p class="faq-answer">You can start at 62, but waiting until full retirement age or 70 maximizes your benefit.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">What is a safe withdrawal rate?</h3>
+            <p class="faq-answer">The 4% rule is commonly used.</p>
+          </div>
+      </section>
+
+      <!-- Related Calculators -->
+      <section class="related-section">
+        <h2>Related Calculators</h2>
+        <div class="related-grid">
+          <a href="/us/retirement-calculators/retirement-savings-calculator.html" class="related-card">
+            <div class="related-icon">🏖️</div>
+            <div class="related-info">
+              <h4>Retirement Savings Calculator</h4>
+              <p>Calculate how much you need to save for retirement. Project ...</p>
+            </div>
+          </a>
+          <a href="/us/retirement-calculators/social-security-calculator.html" class="related-card">
+            <div class="related-icon">🛡️</div>
+            <div class="related-info">
+              <h4>Social Security Calculator</h4>
+              <p>Estimate your Social Security benefits based on earnings his...</p>
+            </div>
+          </a>
+          <a href="/us/retirement-calculators/401k-calculator.html" class="related-card">
+            <div class="related-icon">💼</div>
+            <div class="related-info">
+              <h4>401k Calculator</h4>
+              <p>Project your 401k balance at retirement. Calculate employer ...</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Bottom Ad Placeholder -->
+      <div class="ad-placeholder ad-bottom">
+        <span>Advertisement</span>
+        Ad space available
+      </div>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="../js/main.js"></script>
+  <script src="../js/formulas/retirement-income-formula.js"></script>
+  <script src="../js/calculators/retirement-income-calculator.js"></script>
+</body>
+</html>

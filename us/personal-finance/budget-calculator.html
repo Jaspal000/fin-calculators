@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Calculator | Financial Calculators</title>
+  <meta name="description" content="Create a personalized budget based on your income and expenses. Use the 50/30/20 rule or customize your own.">
+  <link rel="canonical" href="https://financialcalculators.com/us/personal-finance/budget-calculator.html">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Budget Calculator",
+  "description": "Create a personalized budget based on your income and expenses. Use the 50/30/20 rule or customize your own.",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+</head>
+<body>
+  <main class="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/index.html">Home</a>
+      <span class="breadcrumb-separator">/</span>
+      <a href="/us/personal-finance/">Personal Finance</a>
+      <span class="breadcrumb-separator">/</span>
+      <span class="breadcrumb-current">Budget Calculator</span>
+    </nav>
+
+      <header class="page-header">
+        <h1>Budget Calculator - Create Your Personal Budget</h1>
+        <p>Free calculator with instant results. No signup required.</p>
+      </header>
+
+      <!-- Above-fold Ad Placeholder -->
+      <div class="ad-placeholder ad-above-fold">
+        <span>Advertisement</span>
+        Ad space available
+      </div>
+
+      <div class="calculator-layout">
+        <!-- Calculator Form -->
+        <div class="card" id="budgetcalculator">
+          <div class="card-header">
+            <h2 class="card-title">📋 Budget Calculator</h2>
+            <p class="card-subtitle">Enter your details below</p>
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label class="form-label" for="monthlyIncome">Monthly Income</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input type="number" id="monthlyIncome" class="form-input" value="5000" min="0" step="100">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="housing">Housing</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input type="number" id="housing" class="form-input" value="1500" min="0" step="100">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="utilities">Utilities</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input type="number" id="utilities" class="form-input" value="200" min="0" step="100">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="groceries">Groceries</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input type="number" id="groceries" class="form-input" value="500" min="0" step="100">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="transportation">Transportation</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input type="number" id="transportation" class="form-input" value="400" min="0" step="100">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="insurance">Insurance</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input type="number" id="insurance" class="form-input" value="300" min="0" step="100">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="debtPayments">Debt Payments</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input type="number" id="debtPayments" class="form-input" value="400" min="0" step="100">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="entertainment">Entertainment</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input type="number" id="entertainment" class="form-input" value="300" min="0" step="100">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="savings">Savings</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input type="number" id="savings" class="form-input" value="500" min="0" step="100">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results-card">
+          <h3 class="results-title">Results</h3>
+          <div class="results-breakdown">
+              <div class="breakdown-item">
+                <span class="breakdown-label">Needs (50%)</span>
+                <span class="breakdown-value" id="needsAmount">$0.00</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">Wants (30%)</span>
+                <span class="breakdown-value" id="wantsAmount">$0.00</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">Savings (20%)</span>
+                <span class="breakdown-value" id="savingsAmount">$0.00</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">Total Expenses</span>
+                <span class="breakdown-value" id="totalExpenses">$0.00</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">Remaining</span>
+                <span class="breakdown-value" id="remaining">$0.00</span>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mid-content Ad Placeholder -->
+      <div class="ad-placeholder ad-mid-content">
+        <span>Advertisement</span>
+        Ad space available
+      </div>
+
+      <!-- SEO Content -->
+      <section class="seo-content">
+        <h2>About Budget Calculator</h2>
+        <p>Take control of your finances with our comprehensive budget calculator. Input your income and expenses to create a personalized spending plan.</p>
+        <p>Use this calculator to make informed financial decisions. Adjust the inputs to see how different scenarios affect your results. All calculations are performed locally in your browser for privacy and security.</p>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="seo-content faq-section">
+        <h2>Frequently Asked Questions</h2>
+          <div class="faq-item">
+            <h3 class="faq-question">What is the 50/30/20 rule?</h3>
+            <p class="faq-answer">Allocate 50% to needs, 30% to wants, and 20% to savings and debt repayment.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">How do I track my expenses?</h3>
+            <p class="faq-answer">Use budgeting apps, spreadsheets, or review bank statements.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">What if my expenses exceed income?</h3>
+            <p class="faq-answer">Look for areas to cut discretionary spending or increase income.</p>
+          </div>
+      </section>
+
+      <!-- Related Calculators -->
+      <section class="related-section">
+        <h2>Related Calculators</h2>
+        <div class="related-grid">
+          <a href="/us/personal-finance/emergency-fund-calculator.html" class="related-card">
+            <div class="related-icon">🛡️</div>
+            <div class="related-info">
+              <h4>Emergency Fund Calculator</h4>
+              <p>Calculate how much emergency savings you need. Factor in mon...</p>
+            </div>
+          </a>
+          <a href="/us/personal-finance/net-worth-calculator.html" class="related-card">
+            <div class="related-icon">💎</div>
+            <div class="related-info">
+              <h4>Net Worth Calculator</h4>
+              <p>Calculate your net worth by comparing assets and liabilities...</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Bottom Ad Placeholder -->
+      <div class="ad-placeholder ad-bottom">
+        <span>Advertisement</span>
+        Ad space available
+      </div>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="../js/main.js"></script>
+  <script src="../js/formulas/budget-formula.js"></script>
+  <script src="../js/calculators/budget-calculator.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Security Calculator | Financial Calculators</title>
+  <meta name="description" content="Estimate your Social Security benefits based on earnings history and retirement age. Compare filing strategies.">
+  <link rel="canonical" href="https://financialcalculators.com/us/retirement-calculators/social-security-calculator.html">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Social Security Calculator",
+  "description": "Estimate your Social Security benefits based on earnings history and retirement age. Compare filing strategies.",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+</head>
+<body>
+  <main class="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/index.html">Home</a>
+      <span class="breadcrumb-separator">/</span>
+      <a href="/us/retirement-calculators/">Retirement Calculators</a>
+      <span class="breadcrumb-separator">/</span>
+      <span class="breadcrumb-current">Social Security Calculator</span>
+    </nav>
+
+      <header class="page-header">
+        <h1>Social Security Calculator - Benefit Estimator</h1>
+        <p>Free calculator with instant results. No signup required.</p>
+      </header>
+
+      <!-- Above-fold Ad Placeholder -->
+      <div class="ad-placeholder ad-above-fold">
+        <span>Advertisement</span>
+        Ad space available
+      </div>
+
+      <div class="calculator-layout">
+        <!-- Calculator Form -->
+        <div class="card" id="socialsecuritycalculator">
+          <div class="card-header">
+            <h2 class="card-title">🛡️ Social Security Calculator</h2>
+            <p class="card-subtitle">Enter your details below</p>
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label class="form-label" for="aime">Average Indexed Monthly Earnings</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input type="number" id="aime" class="form-input" value="5000" min="0" step="100">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="claimingAge">Claiming Age</label>
+              <select id="claimingAge" class="form-select">
+              <option value="62">62</option>
+              <option value="63">63</option>
+              <option value="64">64</option>
+              <option value="65">65</option>
+              <option value="66">66</option>
+              <option value="67" selected>67</option>
+              <option value="68">68</option>
+              <option value="69">69</option>
+              <option value="70">70</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="fra">Full Retirement Age</label>
+              <select id="fra" class="form-select">
+              <option value="66">66</option>
+              <option value="67" selected>67</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results-card">
+          <h3 class="results-title">Results</h3>
+          <div class="results-breakdown">
+              <div class="breakdown-item">
+                <span class="breakdown-label">Monthly Benefit</span>
+                <span class="breakdown-value" id="monthlyBenefit">$0.00</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">Annual Benefit</span>
+                <span class="breakdown-value" id="annualBenefit">$0.00</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">Age 62 Benefit</span>
+                <span class="breakdown-value" id="age62Benefit">$0.00</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">FRA Benefit</span>
+                <span class="breakdown-value" id="fraBenefit">$0.00</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">Age 70 Benefit</span>
+                <span class="breakdown-value" id="age70Benefit">$0.00</span>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mid-content Ad Placeholder -->
+      <div class="ad-placeholder ad-mid-content">
+        <span>Advertisement</span>
+        Ad space available
+      </div>
+
+      <!-- SEO Content -->
+      <section class="seo-content">
+        <h2>About Social Security Calculator</h2>
+        <p>Estimate your future Social Security benefits with our accurate calculator. Input your earnings history and desired retirement age to see your projected monthly benefit.</p>
+        <p>Use this calculator to make informed financial decisions. Adjust the inputs to see how different scenarios affect your results. All calculations are performed locally in your browser for privacy and security.</p>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="seo-content faq-section">
+        <h2>Frequently Asked Questions</h2>
+          <div class="faq-item">
+            <h3 class="faq-question">How are Social Security benefits calculated?</h3>
+            <p class="faq-answer">Benefits are based on your 35 highest-earning years, adjusted for inflation.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">What is full retirement age?</h3>
+            <p class="faq-answer">Full retirement age is 66-67 depending on your birth year.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">Can I work and collect Social Security?</h3>
+            <p class="faq-answer">Yes, but if under full retirement age, earnings above a limit may reduce your benefits.</p>
+          </div>
+      </section>
+
+      <!-- Related Calculators -->
+      <section class="related-section">
+        <h2>Related Calculators</h2>
+        <div class="related-grid">
+          <a href="/us/retirement-calculators/retirement-income-calculator.html" class="related-card">
+            <div class="related-icon">💵</div>
+            <div class="related-info">
+              <h4>Retirement Income Calculator</h4>
+              <p>Estimate your monthly retirement income from savings, Social...</p>
+            </div>
+          </a>
+          <a href="/us/retirement-calculators/retirement-savings-calculator.html" class="related-card">
+            <div class="related-icon">🏖️</div>
+            <div class="related-info">
+              <h4>Retirement Savings Calculator</h4>
+              <p>Calculate how much you need to save for retirement. Project ...</p>
+            </div>
+          </a>
+          <a href="/us/retirement-calculators/401k-calculator.html" class="related-card">
+            <div class="related-icon">💼</div>
+            <div class="related-info">
+              <h4>401k Calculator</h4>
+              <p>Project your 401k balance at retirement. Calculate employer ...</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Bottom Ad Placeholder -->
+      <div class="ad-placeholder ad-bottom">
+        <span>Advertisement</span>
+        Ad space available
+      </div>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="../js/main.js"></script>
+  <script src="../js/formulas/social-security-formula.js"></script>
+  <script src="../js/calculators/social-security-calculator.js"></script>
+</body>
+</html>

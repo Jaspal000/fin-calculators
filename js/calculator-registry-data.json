@@ -1,0 +1,2247 @@
+{
+  "mortgage-calculator": {
+    "slug": "mortgage-calculator",
+    "category": "loan-calculators",
+    "title": "Mortgage Calculator",
+    "metaDescription": "Calculate your monthly mortgage payments, total interest, and amortization schedule. Free mortgage calculator with taxes and insurance options.",
+    "h1": "Mortgage Calculator - Calculate Your Home Loan Payments",
+    "introduction": "Our free mortgage calculator helps you estimate your monthly home loan payments with precision. Whether you're a first-time homebuyer or refinancing, this tool calculates principal, interest, taxes, and insurance (PITI) to give you a complete picture of your housing costs. Input your loan amount, interest rate, and term to see your amortization schedule and understand how much house you can afford.",
+    "relatedCalculators": [
+      "loan-payoff-calculator",
+      "refinance-calculator",
+      "home-equity-calculator",
+      "debt-to-income-calculator"
+    ],
+    "formulaFile": "mortgage-formula.js",
+    "uiFile": "mortgage-calculator.js",
+    "faqs": [
+      {
+        "question": "How is mortgage interest calculated?",
+        "answer": "Mortgage interest is calculated monthly based on your remaining loan balance. The formula uses your annual interest rate divided by 12, multiplied by the outstanding principal."
+      },
+      {
+        "question": "What is included in PITI?",
+        "answer": "PITI stands for Principal, Interest, Taxes, and Insurance. It represents your total monthly housing payment including property taxes and homeowners insurance."
+      },
+      {
+        "question": "How can I pay off my mortgage faster?",
+        "answer": "You can pay off your mortgage faster by making extra principal payments, switching to biweekly payments, or refinancing to a shorter loan term."
+      }
+    ],
+    "icon": "\ud83c\udfe0",
+    "path": "/us/loan-calculators/mortgage-calculator.html",
+    "inputs": [
+      {
+        "id": "homePrice",
+        "label": "Home Price",
+        "type": "currency",
+        "default": "400000"
+      },
+      {
+        "id": "downPayment",
+        "label": "Down Payment",
+        "type": "currency",
+        "default": "80000"
+      },
+      {
+        "id": "downPaymentPercent",
+        "label": "Down Payment %",
+        "type": "percent",
+        "default": "20"
+      },
+      {
+        "id": "interestRate",
+        "label": "Interest Rate",
+        "type": "percent",
+        "default": "6.5"
+      },
+      {
+        "id": "loanTerm",
+        "label": "Loan Term (years)",
+        "type": "select",
+        "options": [
+          "15",
+          "20",
+          "30"
+        ],
+        "default": "30"
+      },
+      {
+        "id": "propertyTax",
+        "label": "Annual Property Tax",
+        "type": "currency",
+        "default": "4800"
+      },
+      {
+        "id": "homeInsurance",
+        "label": "Annual Insurance",
+        "type": "currency",
+        "default": "1200"
+      },
+      {
+        "id": "pmi",
+        "label": "Annual PMI",
+        "type": "currency",
+        "default": "0"
+      }
+    ],
+    "results": [
+      {
+        "id": "totalMonthlyPayment",
+        "label": "Total Monthly Payment",
+        "format": "currency"
+      },
+      {
+        "id": "monthlyPI",
+        "label": "Principal & Interest",
+        "format": "currency"
+      },
+      {
+        "id": "monthlyTax",
+        "label": "Property Tax",
+        "format": "currency"
+      },
+      {
+        "id": "monthlyInsurance",
+        "label": "Insurance",
+        "format": "currency"
+      },
+      {
+        "id": "loanAmount",
+        "label": "Loan Amount",
+        "format": "currency"
+      },
+      {
+        "id": "totalInterest",
+        "label": "Total Interest",
+        "format": "currency"
+      },
+      {
+        "id": "totalCost",
+        "label": "Total Cost of Loan",
+        "format": "currency"
+      }
+    ]
+  },
+  "loan-payoff-calculator": {
+    "slug": "loan-payoff-calculator",
+    "category": "loan-calculators",
+    "title": "Loan Payoff Calculator",
+    "metaDescription": "Discover how extra payments can accelerate your loan payoff. Calculate interest savings and early payoff dates for any loan type.",
+    "h1": "Loan Payoff Calculator - Pay Off Debt Faster",
+    "introduction": "Use our loan payoff calculator to see how making extra payments can save you thousands in interest and help you become debt-free sooner. This powerful tool shows you exactly when you'll pay off your loan and how much interest you'll save by increasing your monthly payment.",
+    "relatedCalculators": [
+      "mortgage-calculator",
+      "debt-payoff-calculator",
+      "auto-loan-calculator",
+      "credit-card-payoff-calculator"
+    ],
+    "formulaFile": "loan-payoff-formula.js",
+    "uiFile": "loan-payoff-calculator.js",
+    "faqs": [
+      {
+        "question": "How much will extra payments save me?",
+        "answer": "Even small extra payments can save significant interest over time. Use this calculator to see your specific savings."
+      },
+      {
+        "question": "Should I pay off my loan early?",
+        "answer": "Consider your interest rate, other debts, and investment opportunities. High-interest loans are usually best to pay off first."
+      },
+      {
+        "question": "Can I make lump sum payments?",
+        "answer": "Most loans allow lump sum payments toward principal. Check with your lender for prepayment penalties."
+      }
+    ],
+    "icon": "\ud83d\udcb0",
+    "path": "/us/loan-calculators/loan-payoff-calculator.html",
+    "inputs": [
+      {
+        "id": "loanBalance",
+        "label": "Current Balance",
+        "type": "currency",
+        "default": "25000"
+      },
+      {
+        "id": "interestRate",
+        "label": "Interest Rate",
+        "type": "percent",
+        "default": "7.5"
+      },
+      {
+        "id": "monthlyPayment",
+        "label": "Monthly Payment",
+        "type": "currency",
+        "default": "500"
+      },
+      {
+        "id": "extraPayment",
+        "label": "Extra Monthly Payment",
+        "type": "currency",
+        "default": "100"
+      }
+    ],
+    "results": [
+      {
+        "id": "payoffDate",
+        "label": "Payoff Date",
+        "format": "text"
+      },
+      {
+        "id": "monthsSaved",
+        "label": "Months Saved",
+        "format": "number"
+      },
+      {
+        "id": "interestSaved",
+        "label": "Interest Saved",
+        "format": "currency"
+      },
+      {
+        "id": "totalInterest",
+        "label": "Total Interest",
+        "format": "currency"
+      }
+    ]
+  },
+  "auto-loan-calculator": {
+    "slug": "auto-loan-calculator",
+    "category": "loan-calculators",
+    "title": "Auto Loan Calculator",
+    "metaDescription": "Calculate your car loan payments, total interest, and affordability. Free auto loan calculator with trade-in and down payment options.",
+    "h1": "Auto Loan Calculator - Car Payment Estimator",
+    "introduction": "Planning to buy a new or used car? Our auto loan calculator helps you determine your monthly car payments and total loan cost. Factor in your down payment, trade-in value, sales tax, and interest rate to get an accurate estimate.",
+    "relatedCalculators": [
+      "mortgage-calculator",
+      "loan-payoff-calculator",
+      "debt-to-income-calculator"
+    ],
+    "formulaFile": "auto-loan-formula.js",
+    "uiFile": "auto-loan-calculator.js",
+    "faqs": [
+      {
+        "question": "What is a good interest rate for a car loan?",
+        "answer": "Good auto loan rates typically range from 3% to 6% for new cars and 4% to 8% for used cars."
+      },
+      {
+        "question": "How much should I put down on a car?",
+        "answer": "Aim for at least 20% down on a new car or 10% on a used car to avoid being upside down."
+      },
+      {
+        "question": "What loan term should I choose?",
+        "answer": "Shorter terms have higher payments but less total interest. Avoid terms longer than 60 months."
+      }
+    ],
+    "icon": "\ud83d\ude97",
+    "path": "/us/loan-calculators/auto-loan-calculator.html",
+    "inputs": [
+      {
+        "id": "carPrice",
+        "label": "Car Price",
+        "type": "currency",
+        "default": "35000"
+      },
+      {
+        "id": "downPayment",
+        "label": "Down Payment",
+        "type": "currency",
+        "default": "7000"
+      },
+      {
+        "id": "tradeInValue",
+        "label": "Trade-in Value",
+        "type": "currency",
+        "default": "5000"
+      },
+      {
+        "id": "salesTaxRate",
+        "label": "Sales Tax Rate",
+        "type": "percent",
+        "default": "6"
+      },
+      {
+        "id": "interestRate",
+        "label": "Interest Rate",
+        "type": "percent",
+        "default": "5.5"
+      },
+      {
+        "id": "loanTerm",
+        "label": "Loan Term (months)",
+        "type": "select",
+        "options": [
+          "36",
+          "48",
+          "60",
+          "72"
+        ],
+        "default": "60"
+      },
+      {
+        "id": "fees",
+        "label": "Fees",
+        "type": "currency",
+        "default": "500"
+      }
+    ],
+    "results": [
+      {
+        "id": "monthlyPayment",
+        "label": "Monthly Payment",
+        "format": "currency"
+      },
+      {
+        "id": "loanAmount",
+        "label": "Loan Amount",
+        "format": "currency"
+      },
+      {
+        "id": "salesTax",
+        "label": "Sales Tax",
+        "format": "currency"
+      },
+      {
+        "id": "totalInterest",
+        "label": "Total Interest",
+        "format": "currency"
+      },
+      {
+        "id": "totalCost",
+        "label": "Total Cost",
+        "format": "currency"
+      }
+    ]
+  },
+  "refinance-calculator": {
+    "slug": "refinance-calculator",
+    "category": "loan-calculators",
+    "title": "Refinance Calculator",
+    "metaDescription": "Determine if refinancing your mortgage or loan makes financial sense. Calculate break-even points and potential savings.",
+    "h1": "Refinance Calculator - Should You Refinance?",
+    "introduction": "Wondering if refinancing is right for you? Our refinance calculator helps you determine your break-even point and potential savings. Compare your current loan terms with new offers to see how much you could save.",
+    "relatedCalculators": [
+      "mortgage-calculator",
+      "home-equity-calculator",
+      "loan-payoff-calculator"
+    ],
+    "formulaFile": "refinance-formula.js",
+    "uiFile": "refinance-calculator.js",
+    "faqs": [
+      {
+        "question": "When should I refinance my mortgage?",
+        "answer": "Consider refinancing when rates drop at least 0.5-1% below your current rate."
+      },
+      {
+        "question": "What are typical closing costs?",
+        "answer": "Closing costs typically range from 2% to 6% of the loan amount."
+      },
+      {
+        "question": "How long does it take to break even?",
+        "answer": "Break-even periods typically range from 2-5 years."
+      }
+    ],
+    "icon": "\ud83d\udd04",
+    "path": "/us/loan-calculators/refinance-calculator.html",
+    "inputs": [
+      {
+        "id": "currentBalance",
+        "label": "Current Balance",
+        "type": "currency",
+        "default": "300000"
+      },
+      {
+        "id": "currentRate",
+        "label": "Current Rate",
+        "type": "percent",
+        "default": "7"
+      },
+      {
+        "id": "currentPayment",
+        "label": "Current Payment",
+        "type": "currency",
+        "default": "2000"
+      },
+      {
+        "id": "newRate",
+        "label": "New Rate",
+        "type": "percent",
+        "default": "5.5"
+      },
+      {
+        "id": "newTerm",
+        "label": "New Term (years)",
+        "type": "select",
+        "options": [
+          "15",
+          "20",
+          "30"
+        ],
+        "default": "30"
+      },
+      {
+        "id": "closingCosts",
+        "label": "Closing Costs",
+        "type": "currency",
+        "default": "5000"
+      }
+    ],
+    "results": [
+      {
+        "id": "newMonthlyPayment",
+        "label": "New Payment",
+        "format": "currency"
+      },
+      {
+        "id": "monthlySavings",
+        "label": "Monthly Savings",
+        "format": "currency"
+      },
+      {
+        "id": "breakEvenMonths",
+        "label": "Break-even (months)",
+        "format": "number"
+      },
+      {
+        "id": "totalInterestSavings",
+        "label": "Interest Savings",
+        "format": "currency"
+      }
+    ]
+  },
+  "home-equity-calculator": {
+    "slug": "home-equity-calculator",
+    "category": "loan-calculators",
+    "title": "Home Equity Calculator",
+    "metaDescription": "Calculate your available home equity and potential HELOC or home equity loan amounts. Free home equity calculator.",
+    "h1": "Home Equity Calculator - Access Your Home's Value",
+    "introduction": "Discover how much equity you've built in your home with our home equity calculator. This tool estimates your current home value minus your mortgage balance to show available equity.",
+    "relatedCalculators": [
+      "mortgage-calculator",
+      "refinance-calculator",
+      "debt-consolidation-calculator"
+    ],
+    "formulaFile": "home-equity-formula.js",
+    "uiFile": "home-equity-calculator.js",
+    "faqs": [
+      {
+        "question": "How is home equity calculated?",
+        "answer": "Home equity is your home's current market value minus your outstanding mortgage balance."
+      },
+      {
+        "question": "How much equity can I borrow?",
+        "answer": "Most lenders allow you to borrow up to 80-85% of your home's value minus your mortgage balance."
+      },
+      {
+        "question": "What can I use home equity for?",
+        "answer": "Common uses include home improvements, debt consolidation, and education expenses."
+      }
+    ],
+    "icon": "\ud83c\udfe1",
+    "path": "/us/loan-calculators/home-equity-calculator.html",
+    "inputs": [
+      {
+        "id": "homeValue",
+        "label": "Home Value",
+        "type": "currency",
+        "default": "500000"
+      },
+      {
+        "id": "mortgageBalance",
+        "label": "Mortgage Balance",
+        "type": "currency",
+        "default": "350000"
+      },
+      {
+        "id": "maxLTV",
+        "label": "Max LTV %",
+        "type": "percent",
+        "default": "80"
+      }
+    ],
+    "results": [
+      {
+        "id": "totalEquity",
+        "label": "Total Equity",
+        "format": "currency"
+      },
+      {
+        "id": "equityPercentage",
+        "label": "Equity %",
+        "format": "percent"
+      },
+      {
+        "id": "availableEquity",
+        "label": "Available Equity",
+        "format": "currency"
+      },
+      {
+        "id": "currentLTV",
+        "label": "Current LTV",
+        "format": "percent"
+      }
+    ]
+  },
+  "tax-refund-calculator": {
+    "slug": "tax-refund-calculator",
+    "category": "tax-calculators",
+    "title": "Tax Refund Calculator",
+    "metaDescription": "Estimate your tax refund or amount owed with our free tax calculator. Includes federal withholding and deductions.",
+    "h1": "Tax Refund Calculator - Estimate Your Return",
+    "introduction": "Get an early estimate of your tax refund or amount owed with our comprehensive tax calculator. Input your income, withholdings, deductions, and credits to see where you stand.",
+    "relatedCalculators": [
+      "income-tax-calculator",
+      "self-employment-tax-calculator",
+      "capital-gains-tax-calculator"
+    ],
+    "formulaFile": "tax-refund-formula.js",
+    "uiFile": "tax-refund-calculator.js",
+    "faqs": [
+      {
+        "question": "How accurate is this tax estimate?",
+        "answer": "This calculator provides estimates based on current tax brackets. Actual results may vary."
+      },
+      {
+        "question": "Why is my refund different than expected?",
+        "answer": "Changes in income, deductions, credits, or withholding can affect your refund."
+      },
+      {
+        "question": "How can I increase my refund?",
+        "answer": "Maximize deductions and claim all eligible credits."
+      }
+    ],
+    "icon": "\ud83d\udcb5",
+    "path": "/us/tax-calculators/tax-refund-calculator.html",
+    "inputs": [
+      {
+        "id": "income",
+        "label": "Annual Income",
+        "type": "currency",
+        "default": "75000"
+      },
+      {
+        "id": "withholding",
+        "label": "Total Withholding",
+        "type": "currency",
+        "default": "15000"
+      },
+      {
+        "id": "deductions",
+        "label": "Deductions",
+        "type": "currency",
+        "default": "0"
+      },
+      {
+        "id": "credits",
+        "label": "Tax Credits",
+        "type": "currency",
+        "default": "0"
+      },
+      {
+        "id": "filingStatus",
+        "label": "Filing Status",
+        "type": "select",
+        "options": [
+          "single",
+          "married",
+          "hoh"
+        ],
+        "default": "single"
+      }
+    ],
+    "results": [
+      {
+        "id": "taxableIncome",
+        "label": "Taxable Income",
+        "format": "currency"
+      },
+      {
+        "id": "taxBeforeCredits",
+        "label": "Tax Before Credits",
+        "format": "currency"
+      },
+      {
+        "id": "taxAfterCredits",
+        "label": "Tax After Credits",
+        "format": "currency"
+      },
+      {
+        "id": "refund",
+        "label": "Refund/Owed",
+        "format": "currency"
+      },
+      {
+        "id": "effectiveRate",
+        "label": "Effective Tax Rate",
+        "format": "percent"
+      }
+    ]
+  },
+  "income-tax-calculator": {
+    "slug": "income-tax-calculator",
+    "category": "tax-calculators",
+    "title": "Income Tax Calculator",
+    "metaDescription": "Calculate your federal income tax based on current IRS tax brackets. Free income tax estimator for US taxpayers.",
+    "h1": "Income Tax Calculator - Federal Tax Estimator",
+    "introduction": "Calculate your federal income tax liability using current IRS tax brackets and rates. Our income tax calculator shows you exactly how much tax you owe based on your taxable income.",
+    "relatedCalculators": [
+      "tax-refund-calculator",
+      "self-employment-tax-calculator",
+      "capital-gains-tax-calculator"
+    ],
+    "formulaFile": "income-tax-formula.js",
+    "uiFile": "income-tax-calculator.js",
+    "faqs": [
+      {
+        "question": "What are the current federal tax brackets?",
+        "answer": "Federal tax brackets range from 10% to 37% depending on your income and filing status."
+      },
+      {
+        "question": "How do tax brackets work?",
+        "answer": "The US uses a progressive tax system. Only income within each bracket is taxed at that rate."
+      },
+      {
+        "question": "What is taxable income?",
+        "answer": "Taxable income is your gross income minus deductions, exemptions, and adjustments."
+      }
+    ],
+    "icon": "\ud83d\udcca",
+    "path": "/us/tax-calculators/income-tax-calculator.html",
+    "inputs": [
+      {
+        "id": "income",
+        "label": "Annual Income",
+        "type": "currency",
+        "default": "75000"
+      },
+      {
+        "id": "filingStatus",
+        "label": "Filing Status",
+        "type": "select",
+        "options": [
+          "single",
+          "married",
+          "hoh"
+        ],
+        "default": "single"
+      },
+      {
+        "id": "deductions",
+        "label": "Itemized Deductions",
+        "type": "currency",
+        "default": "0"
+      }
+    ],
+    "results": [
+      {
+        "id": "taxableIncome",
+        "label": "Taxable Income",
+        "format": "currency"
+      },
+      {
+        "id": "totalTax",
+        "label": "Total Tax",
+        "format": "currency"
+      },
+      {
+        "id": "effectiveTaxRate",
+        "label": "Effective Rate",
+        "format": "percent"
+      },
+      {
+        "id": "marginalTaxRate",
+        "label": "Marginal Rate",
+        "format": "percent"
+      },
+      {
+        "id": "takeHomePay",
+        "label": "Take Home Pay",
+        "format": "currency"
+      }
+    ]
+  },
+  "self-employment-tax-calculator": {
+    "slug": "self-employment-tax-calculator",
+    "category": "tax-calculators",
+    "title": "Self-Employment Tax Calculator",
+    "metaDescription": "Calculate self-employment tax for freelancers, contractors, and small business owners. Includes quarterly payment estimates.",
+    "h1": "Self-Employment Tax Calculator - 1099 Tax Estimator",
+    "introduction": "Freelancers, contractors, and small business owners can calculate their self-employment tax with ease. This tool computes both the employer and employee portions of Social Security and Medicare taxes.",
+    "relatedCalculators": [
+      "income-tax-calculator",
+      "tax-refund-calculator",
+      "tax-deferred-calculator"
+    ],
+    "formulaFile": "self-employment-tax-formula.js",
+    "uiFile": "self-employment-tax-calculator.js",
+    "faqs": [
+      {
+        "question": "What is the self-employment tax rate?",
+        "answer": "The self-employment tax rate is 15.3%, consisting of 12.4% for Social Security and 2.9% for Medicare."
+      },
+      {
+        "question": "Do I need to pay quarterly taxes?",
+        "answer": "If you expect to owe $1,000 or more in taxes, you should make quarterly estimated payments."
+      },
+      {
+        "question": "Can I deduct self-employment tax?",
+        "answer": "You can deduct the employer portion (50%) of self-employment tax."
+      }
+    ],
+    "icon": "\ud83d\udcbc",
+    "path": "/us/tax-calculators/self-employment-tax-calculator.html",
+    "inputs": [
+      {
+        "id": "netEarnings",
+        "label": "Net Earnings",
+        "type": "currency",
+        "default": "60000"
+      },
+      {
+        "id": "otherWages",
+        "label": "Other Wages",
+        "type": "currency",
+        "default": "0"
+      }
+    ],
+    "results": [
+      {
+        "id": "taxableEarnings",
+        "label": "Taxable Earnings",
+        "format": "currency"
+      },
+      {
+        "id": "socialSecurityTax",
+        "label": "Social Security Tax",
+        "format": "currency"
+      },
+      {
+        "id": "medicareTax",
+        "label": "Medicare Tax",
+        "format": "currency"
+      },
+      {
+        "id": "totalSETax",
+        "label": "Total SE Tax",
+        "format": "currency"
+      },
+      {
+        "id": "quarterlyPayment",
+        "label": "Quarterly Payment",
+        "format": "currency"
+      }
+    ]
+  },
+  "capital-gains-tax-calculator": {
+    "slug": "capital-gains-tax-calculator",
+    "category": "tax-calculators",
+    "title": "Capital Gains Tax Calculator",
+    "metaDescription": "Calculate capital gains tax on stocks, real estate, and investments. Distinguishes between short-term and long-term gains.",
+    "h1": "Capital Gains Tax Calculator - Investment Tax Estimator",
+    "introduction": "Understand the tax implications of your investments with our capital gains tax calculator. This tool differentiates between short-term and long-term capital gains.",
+    "relatedCalculators": [
+      "income-tax-calculator",
+      "investment-return-calculator",
+      "tax-deferred-calculator"
+    ],
+    "formulaFile": "capital-gains-tax-formula.js",
+    "uiFile": "capital-gains-tax-calculator.js",
+    "faqs": [
+      {
+        "question": "What is the difference between short and long-term gains?",
+        "answer": "Short-term gains (held under 1 year) are taxed as ordinary income. Long-term gains have preferential rates."
+      },
+      {
+        "question": "How can I minimize capital gains tax?",
+        "answer": "Hold investments over a year and use tax-loss harvesting."
+      },
+      {
+        "question": "Do I pay tax on unrealized gains?",
+        "answer": "No, you only pay capital gains tax when you sell an asset."
+      }
+    ],
+    "icon": "\ud83d\udcc8",
+    "path": "/us/tax-calculators/capital-gains-tax-calculator.html",
+    "inputs": [
+      {
+        "id": "purchasePrice",
+        "label": "Purchase Price",
+        "type": "currency",
+        "default": "10000"
+      },
+      {
+        "id": "salePrice",
+        "label": "Sale Price",
+        "type": "currency",
+        "default": "15000"
+      },
+      {
+        "id": "holdingPeriod",
+        "label": "Holding Period (months)",
+        "type": "number",
+        "default": "18"
+      },
+      {
+        "id": "filingStatus",
+        "label": "Filing Status",
+        "type": "select",
+        "options": [
+          "single",
+          "married",
+          "hoh"
+        ],
+        "default": "single"
+      },
+      {
+        "id": "ordinaryIncome",
+        "label": "Ordinary Income",
+        "type": "currency",
+        "default": "75000"
+      }
+    ],
+    "results": [
+      {
+        "id": "gain",
+        "label": "Capital Gain",
+        "format": "currency"
+      },
+      {
+        "id": "tax",
+        "label": "Tax",
+        "format": "currency"
+      },
+      {
+        "id": "taxRate",
+        "label": "Tax Rate",
+        "format": "percent"
+      },
+      {
+        "id": "netProceeds",
+        "label": "Net Proceeds",
+        "format": "currency"
+      }
+    ]
+  },
+  "tax-deferred-calculator": {
+    "slug": "tax-deferred-calculator",
+    "category": "tax-calculators",
+    "title": "Tax-Deferred Growth Calculator",
+    "metaDescription": "Compare taxable vs tax-deferred investment growth. See how 401k and IRA tax advantages compound over time.",
+    "h1": "Tax-Deferred Growth Calculator - 401k & IRA Benefits",
+    "introduction": "Discover the power of tax-deferred growth with our calculator. Compare how your investments grow in taxable accounts versus tax-deferred accounts like 401(k)s and IRAs.",
+    "relatedCalculators": [
+      "retirement-savings-calculator",
+      "401k-calculator",
+      "ira-calculator"
+    ],
+    "formulaFile": "tax-deferred-formula.js",
+    "uiFile": "tax-deferred-calculator.js",
+    "faqs": [
+      {
+        "question": "What does tax-deferred mean?",
+        "answer": "Tax-deferred means you don't pay taxes on contributions or growth until withdrawal."
+      },
+      {
+        "question": "How much can tax deferral save me?",
+        "answer": "Tax deferral can significantly increase your ending balance due to compounding."
+      },
+      {
+        "question": "Should I choose Roth or Traditional?",
+        "answer": "Traditional may be better if you expect lower taxes in retirement."
+      }
+    ],
+    "icon": "\ud83d\udcc9",
+    "path": "/us/tax-calculators/tax-deferred-calculator.html",
+    "inputs": [
+      {
+        "id": "initialInvestment",
+        "label": "Initial Investment",
+        "type": "currency",
+        "default": "10000"
+      },
+      {
+        "id": "monthlyContribution",
+        "label": "Monthly Contribution",
+        "type": "currency",
+        "default": "500"
+      },
+      {
+        "id": "annualReturn",
+        "label": "Annual Return",
+        "type": "percent",
+        "default": "7"
+      },
+      {
+        "id": "years",
+        "label": "Years",
+        "type": "number",
+        "default": "30"
+      },
+      {
+        "id": "taxRate",
+        "label": "Tax Rate",
+        "type": "percent",
+        "default": "22"
+      }
+    ],
+    "results": [
+      {
+        "id": "taxableBalance",
+        "label": "Taxable Account",
+        "format": "currency"
+      },
+      {
+        "id": "traditionalBalance",
+        "label": "Traditional 401k/IRA",
+        "format": "currency"
+      },
+      {
+        "id": "rothBalance",
+        "label": "Roth Account",
+        "format": "currency"
+      },
+      {
+        "id": "advantage",
+        "label": "Tax-Deferred Advantage",
+        "format": "currency"
+      }
+    ]
+  },
+  "compound-interest-calculator": {
+    "slug": "compound-interest-calculator",
+    "category": "investment-calculators",
+    "title": "Compound Interest Calculator",
+    "metaDescription": "See how compound interest grows your money over time. Calculate investment growth with regular contributions.",
+    "h1": "Compound Interest Calculator - The Power of Compounding",
+    "introduction": "Experience the magic of compound interest with our powerful calculator. See how your money grows exponentially when you earn interest on your interest.",
+    "relatedCalculators": [
+      "investment-return-calculator",
+      "retirement-savings-calculator",
+      "tax-deferred-calculator"
+    ],
+    "formulaFile": "compound-interest-formula.js",
+    "uiFile": "compound-interest-calculator.js",
+    "faqs": [
+      {
+        "question": "What is compound interest?",
+        "answer": "Compound interest is interest calculated on both the initial principal and accumulated interest."
+      },
+      {
+        "question": "How often should interest compound?",
+        "answer": "More frequent compounding yields slightly higher returns."
+      },
+      {
+        "question": "What is the rule of 72?",
+        "answer": "Divide 72 by your interest rate to estimate how many years it takes to double your money."
+      }
+    ],
+    "icon": "\ud83d\udcb9",
+    "path": "/us/investment-calculators/compound-interest-calculator.html",
+    "inputs": [
+      {
+        "id": "initialInvestment",
+        "label": "Initial Investment",
+        "type": "currency",
+        "default": "10000"
+      },
+      {
+        "id": "monthlyContribution",
+        "label": "Monthly Contribution",
+        "type": "currency",
+        "default": "500"
+      },
+      {
+        "id": "annualReturn",
+        "label": "Annual Return",
+        "type": "percent",
+        "default": "7"
+      },
+      {
+        "id": "years",
+        "label": "Years",
+        "type": "number",
+        "default": "30"
+      }
+    ],
+    "results": [
+      {
+        "id": "finalBalance",
+        "label": "Final Balance",
+        "format": "currency"
+      },
+      {
+        "id": "totalContributions",
+        "label": "Total Contributions",
+        "format": "currency"
+      },
+      {
+        "id": "totalInterest",
+        "label": "Total Interest",
+        "format": "currency"
+      },
+      {
+        "id": "doublingTime",
+        "label": "Years to Double",
+        "format": "number"
+      }
+    ]
+  },
+  "investment-return-calculator": {
+    "slug": "investment-return-calculator",
+    "category": "investment-calculators",
+    "title": "Investment Return Calculator",
+    "metaDescription": "Calculate total return, annualized return, and CAGR for your investments. Compare investment performance easily.",
+    "h1": "Investment Return Calculator - Calculate Your ROI",
+    "introduction": "Measure your investment performance accurately with our comprehensive return calculator. Calculate total returns, annualized returns, and CAGR.",
+    "relatedCalculators": [
+      "compound-interest-calculator",
+      "stock-return-calculator",
+      "dividend-calculator"
+    ],
+    "formulaFile": "investment-return-formula.js",
+    "uiFile": "investment-return-calculator.js",
+    "faqs": [
+      {
+        "question": "What is CAGR?",
+        "answer": "Compound Annual Growth Rate measures the mean annual growth rate over a specified time period."
+      },
+      {
+        "question": "How do I calculate total return?",
+        "answer": "Total return includes capital gains plus dividends, divided by initial investment."
+      },
+      {
+        "question": "What is a good annual return?",
+        "answer": "Historically, the stock market averages 7-10% annually after inflation."
+      }
+    ],
+    "icon": "\ud83d\udcca",
+    "path": "/us/investment-calculators/investment-return-calculator.html",
+    "inputs": [
+      {
+        "id": "initialInvestment",
+        "label": "Initial Investment",
+        "type": "currency",
+        "default": "10000"
+      },
+      {
+        "id": "finalValue",
+        "label": "Final Value",
+        "type": "currency",
+        "default": "20000"
+      },
+      {
+        "id": "dividends",
+        "label": "Dividends Received",
+        "type": "currency",
+        "default": "500"
+      },
+      {
+        "id": "years",
+        "label": "Years",
+        "type": "number",
+        "default": "10"
+      }
+    ],
+    "results": [
+      {
+        "id": "totalReturn",
+        "label": "Total Return",
+        "format": "currency"
+      },
+      {
+        "id": "totalReturnPercent",
+        "label": "Total Return %",
+        "format": "percent"
+      },
+      {
+        "id": "cagr",
+        "label": "CAGR",
+        "format": "percent"
+      },
+      {
+        "id": "annualizedReturn",
+        "label": "Annualized Return",
+        "format": "percent"
+      }
+    ]
+  },
+  "stock-return-calculator": {
+    "slug": "stock-return-calculator",
+    "category": "investment-calculators",
+    "title": "Stock Return Calculator",
+    "metaDescription": "Calculate stock investment returns including dividends. Analyze buy-and-hold performance with dividend reinvestment.",
+    "h1": "Stock Return Calculator - Analyze Stock Performance",
+    "introduction": "Analyze your stock investments with precision using our stock return calculator. Input your purchase price, number of shares, and dividends to calculate total returns.",
+    "relatedCalculators": [
+      "investment-return-calculator",
+      "dividend-calculator",
+      "capital-gains-tax-calculator"
+    ],
+    "formulaFile": "stock-return-formula.js",
+    "uiFile": "stock-return-calculator.js",
+    "faqs": [
+      {
+        "question": "How are stock returns calculated?",
+        "answer": "Stock returns include price appreciation plus dividends."
+      },
+      {
+        "question": "Should I reinvest dividends?",
+        "answer": "Dividend reinvestment typically increases long-term returns through compounding."
+      },
+      {
+        "question": "What affects stock prices?",
+        "answer": "Stock prices are affected by company performance, economic conditions, and market sentiment."
+      }
+    ],
+    "icon": "\ud83d\udcc9",
+    "path": "/us/investment-calculators/stock-return-calculator.html",
+    "inputs": [
+      {
+        "id": "purchasePrice",
+        "label": "Purchase Price",
+        "type": "currency",
+        "default": "100"
+      },
+      {
+        "id": "shares",
+        "label": "Shares",
+        "type": "number",
+        "default": "100"
+      },
+      {
+        "id": "currentPrice",
+        "label": "Current Price",
+        "type": "currency",
+        "default": "150"
+      },
+      {
+        "id": "totalDividends",
+        "label": "Total Dividends",
+        "type": "currency",
+        "default": "200"
+      },
+      {
+        "id": "dividendReinvested",
+        "label": "Dividends Reinvested",
+        "type": "checkbox",
+        "default": "false"
+      }
+    ],
+    "results": [
+      {
+        "id": "initialInvestment",
+        "label": "Initial Investment",
+        "format": "currency"
+      },
+      {
+        "id": "currentValue",
+        "label": "Current Value",
+        "format": "currency"
+      },
+      {
+        "id": "capitalGain",
+        "label": "Capital Gain",
+        "format": "currency"
+      },
+      {
+        "id": "totalReturn",
+        "label": "Total Return",
+        "format": "currency"
+      },
+      {
+        "id": "totalReturnPercent",
+        "label": "Return %",
+        "format": "percent"
+      }
+    ]
+  },
+  "dividend-calculator": {
+    "slug": "dividend-calculator",
+    "category": "investment-calculators",
+    "title": "Dividend Calculator",
+    "metaDescription": "Calculate dividend income and yield for your portfolio. Project future dividend growth and reinvestment returns.",
+    "h1": "Dividend Calculator - Project Your Dividend Income",
+    "introduction": "Build your passive income stream with our dividend calculator. Calculate current dividend yield and project future income with dividend growth.",
+    "relatedCalculators": [
+      "stock-return-calculator",
+      "compound-interest-calculator",
+      "retirement-savings-calculator"
+    ],
+    "formulaFile": "dividend-formula.js",
+    "uiFile": "dividend-calculator.js",
+    "faqs": [
+      {
+        "question": "What is dividend yield?",
+        "answer": "Dividend yield is annual dividends per share divided by stock price."
+      },
+      {
+        "question": "How often are dividends paid?",
+        "answer": "Most US companies pay quarterly dividends."
+      },
+      {
+        "question": "What is a good dividend yield?",
+        "answer": "Yields between 2-6% are typical."
+      }
+    ],
+    "icon": "\ud83d\udcb8",
+    "path": "/us/investment-calculators/dividend-calculator.html",
+    "inputs": [
+      {
+        "id": "sharePrice",
+        "label": "Share Price",
+        "type": "currency",
+        "default": "50"
+      },
+      {
+        "id": "sharesOwned",
+        "label": "Shares Owned",
+        "type": "number",
+        "default": "200"
+      },
+      {
+        "id": "annualDividend",
+        "label": "Annual Dividend/Share",
+        "type": "currency",
+        "default": "2"
+      },
+      {
+        "id": "dividendGrowth",
+        "label": "Dividend Growth Rate",
+        "type": "percent",
+        "default": "5"
+      },
+      {
+        "id": "years",
+        "label": "Projection Years",
+        "type": "number",
+        "default": "10"
+      }
+    ],
+    "results": [
+      {
+        "id": "portfolioValue",
+        "label": "Portfolio Value",
+        "format": "currency"
+      },
+      {
+        "id": "currentYield",
+        "label": "Current Yield",
+        "format": "percent"
+      },
+      {
+        "id": "annualIncome",
+        "label": "Annual Income",
+        "format": "currency"
+      },
+      {
+        "id": "monthlyIncome",
+        "label": "Monthly Income",
+        "format": "currency"
+      }
+    ]
+  },
+  "dollar-cost-averaging-calculator": {
+    "slug": "dollar-cost-averaging-calculator",
+    "category": "investment-calculators",
+    "title": "Dollar Cost Averaging Calculator",
+    "metaDescription": "See how dollar cost averaging reduces investment risk. Compare lump sum vs periodic investing strategies.",
+    "h1": "Dollar Cost Averaging Calculator - DCA Strategy Tool",
+    "introduction": "Discover the benefits of dollar cost averaging with our specialized calculator. Compare investing a lump sum versus spreading investments over time.",
+    "relatedCalculators": [
+      "investment-return-calculator",
+      "compound-interest-calculator",
+      "stock-return-calculator"
+    ],
+    "formulaFile": "dollar-cost-averaging-formula.js",
+    "uiFile": "dollar-cost-averaging-calculator.js",
+    "faqs": [
+      {
+        "question": "What is dollar cost averaging?",
+        "answer": "DCA is investing a fixed amount regularly regardless of market conditions."
+      },
+      {
+        "question": "Is DCA better than lump sum investing?",
+        "answer": "DCA reduces timing risk but historically lump sum performs better about 65% of the time."
+      },
+      {
+        "question": "How often should I invest with DCA?",
+        "answer": "Monthly investing aligns with paychecks and is most common."
+      }
+    ],
+    "icon": "\ud83d\udcc5",
+    "path": "/us/investment-calculators/dollar-cost-averaging-calculator.html",
+    "inputs": [
+      {
+        "id": "totalAmount",
+        "label": "Total Amount",
+        "type": "currency",
+        "default": "12000"
+      },
+      {
+        "id": "monthlyInvestment",
+        "label": "Monthly Investment",
+        "type": "currency",
+        "default": "1000"
+      },
+      {
+        "id": "months",
+        "label": "Months",
+        "type": "number",
+        "default": "12"
+      },
+      {
+        "id": "expectedReturn",
+        "label": "Expected Return",
+        "type": "percent",
+        "default": "8"
+      }
+    ],
+    "results": [
+      {
+        "id": "dcaFinalBalance",
+        "label": "DCA Final Balance",
+        "format": "currency"
+      },
+      {
+        "id": "lumpSumFinalBalance",
+        "label": "Lump Sum Final Balance",
+        "format": "currency"
+      },
+      {
+        "id": "comparison",
+        "label": "Difference",
+        "format": "currency"
+      }
+    ]
+  },
+  "retirement-savings-calculator": {
+    "slug": "retirement-savings-calculator",
+    "category": "retirement-calculators",
+    "title": "Retirement Savings Calculator",
+    "metaDescription": "Calculate how much you need to save for retirement. Project your nest egg and determine if you're on track.",
+    "h1": "Retirement Savings Calculator - Plan Your Future",
+    "introduction": "Plan for a secure retirement with our comprehensive savings calculator. Determine how much you need to save monthly to reach your retirement goals.",
+    "relatedCalculators": [
+      "401k-calculator",
+      "ira-calculator",
+      "retirement-income-calculator"
+    ],
+    "formulaFile": "retirement-savings-formula.js",
+    "uiFile": "retirement-savings-calculator.js",
+    "faqs": [
+      {
+        "question": "How much do I need to retire?",
+        "answer": "Most experts suggest 25x your annual expenses or 80% of pre-retirement income."
+      },
+      {
+        "question": "When should I start saving for retirement?",
+        "answer": "The earlier the better. Starting in your 20s allows compound interest to work dramatically."
+      },
+      {
+        "question": "What is the 4% rule?",
+        "answer": "The 4% rule suggests you can safely withdraw 4% of your nest egg annually in retirement."
+      }
+    ],
+    "icon": "\ud83c\udfd6\ufe0f",
+    "path": "/us/retirement-calculators/retirement-savings-calculator.html",
+    "inputs": [
+      {
+        "id": "currentAge",
+        "label": "Current Age",
+        "type": "number",
+        "default": "35"
+      },
+      {
+        "id": "retirementAge",
+        "label": "Retirement Age",
+        "type": "number",
+        "default": "65"
+      },
+      {
+        "id": "currentSavings",
+        "label": "Current Savings",
+        "type": "currency",
+        "default": "50000"
+      },
+      {
+        "id": "monthlyContribution",
+        "label": "Monthly Contribution",
+        "type": "currency",
+        "default": "500"
+      },
+      {
+        "id": "annualReturn",
+        "label": "Annual Return",
+        "type": "percent",
+        "default": "7"
+      },
+      {
+        "id": "desiredIncome",
+        "label": "Desired Annual Income",
+        "type": "currency",
+        "default": "60000"
+      }
+    ],
+    "results": [
+      {
+        "id": "projectedSavings",
+        "label": "Projected Savings",
+        "format": "currency"
+      },
+      {
+        "id": "requiredSavings",
+        "label": "Required Savings",
+        "format": "currency"
+      },
+      {
+        "id": "savingsGap",
+        "label": "Savings Gap",
+        "format": "currency"
+      },
+      {
+        "id": "requiredMonthlyContribution",
+        "label": "Required Monthly",
+        "format": "currency"
+      },
+      {
+        "id": "safeWithdrawal",
+        "label": "Safe Withdrawal",
+        "format": "currency"
+      }
+    ]
+  },
+  "401k-calculator": {
+    "slug": "401k-calculator",
+    "category": "retirement-calculators",
+    "title": "401k Calculator",
+    "metaDescription": "Project your 401k balance at retirement. Calculate employer match benefits and contribution impacts.",
+    "h1": "401k Calculator - Maximize Your Employer Match",
+    "introduction": "Maximize your 401k savings with our detailed calculator. See how contributions, employer matches, and investment returns grow your retirement nest egg.",
+    "relatedCalculators": [
+      "retirement-savings-calculator",
+      "ira-calculator",
+      "tax-deferred-calculator"
+    ],
+    "formulaFile": "401k-formula.js",
+    "uiFile": "401k-calculator.js",
+    "faqs": [
+      {
+        "question": "How much should I contribute to my 401k?",
+        "answer": "At minimum, contribute enough to get your full employer match. Ideally, work toward 15% of your income."
+      },
+      {
+        "question": "What is employer matching?",
+        "answer": "Employers may match your contributions up to a percentage of your salary, typically 3-6%."
+      },
+      {
+        "question": "What are 401k contribution limits?",
+        "answer": "For 2024, the employee contribution limit is $23,000, or $30,500 if age 50 or older."
+      }
+    ],
+    "icon": "\ud83d\udcbc",
+    "path": "/us/retirement-calculators/401k-calculator.html",
+    "inputs": [
+      {
+        "id": "currentBalance",
+        "label": "Current Balance",
+        "type": "currency",
+        "default": "25000"
+      },
+      {
+        "id": "annualSalary",
+        "label": "Annual Salary",
+        "type": "currency",
+        "default": "75000"
+      },
+      {
+        "id": "contributionPercent",
+        "label": "Your Contribution %",
+        "type": "percent",
+        "default": "6"
+      },
+      {
+        "id": "employerMatchPercent",
+        "label": "Employer Match %",
+        "type": "percent",
+        "default": "50"
+      },
+      {
+        "id": "employerMatchLimit",
+        "label": "Match Limit %",
+        "type": "percent",
+        "default": "6"
+      },
+      {
+        "id": "annualReturn",
+        "label": "Annual Return",
+        "type": "percent",
+        "default": "7"
+      },
+      {
+        "id": "years",
+        "label": "Years",
+        "type": "number",
+        "default": "30"
+      }
+    ],
+    "results": [
+      {
+        "id": "finalBalance",
+        "label": "Final Balance",
+        "format": "currency"
+      },
+      {
+        "id": "totalEmployeeContributions",
+        "label": "Your Contributions",
+        "format": "currency"
+      },
+      {
+        "id": "totalEmployerContributions",
+        "label": "Employer Match",
+        "format": "currency"
+      },
+      {
+        "id": "investmentGrowth",
+        "label": "Investment Growth",
+        "format": "currency"
+      }
+    ]
+  },
+  "ira-calculator": {
+    "slug": "ira-calculator",
+    "category": "retirement-calculators",
+    "title": "IRA Calculator",
+    "metaDescription": "Compare Traditional vs Roth IRA growth and tax benefits. Calculate IRA contributions and retirement projections.",
+    "h1": "IRA Calculator - Traditional vs Roth Comparison",
+    "introduction": "Choose the right IRA for your situation with our comparison calculator. See how Traditional and Roth IRAs differ in tax treatment and ending balances.",
+    "relatedCalculators": [
+      "retirement-savings-calculator",
+      "401k-calculator",
+      "tax-deferred-calculator"
+    ],
+    "formulaFile": "ira-formula.js",
+    "uiFile": "ira-calculator.js",
+    "faqs": [
+      {
+        "question": "What is the difference between Traditional and Roth IRA?",
+        "answer": "Traditional offers tax-deductible contributions and taxable withdrawals. Roth uses after-tax money but withdrawals are tax-free."
+      },
+      {
+        "question": "What are IRA contribution limits?",
+        "answer": "For 2024, the limit is $7,000, or $8,000 if age 50 or older."
+      },
+      {
+        "question": "Can I have both types of IRA?",
+        "answer": "Yes, but your total contributions cannot exceed the annual limit."
+      }
+    ],
+    "icon": "\ud83c\udfdb\ufe0f",
+    "path": "/us/retirement-calculators/ira-calculator.html",
+    "inputs": [
+      {
+        "id": "currentTaxRate",
+        "label": "Current Tax Rate",
+        "type": "percent",
+        "default": "22"
+      },
+      {
+        "id": "retirementTaxRate",
+        "label": "Retirement Tax Rate",
+        "type": "percent",
+        "default": "15"
+      },
+      {
+        "id": "annualContribution",
+        "label": "Annual Contribution",
+        "type": "currency",
+        "default": "6000"
+      },
+      {
+        "id": "years",
+        "label": "Years",
+        "type": "number",
+        "default": "30"
+      },
+      {
+        "id": "annualReturn",
+        "label": "Annual Return",
+        "type": "percent",
+        "default": "7"
+      },
+      {
+        "id": "currentAge",
+        "label": "Current Age",
+        "type": "number",
+        "default": "35"
+      }
+    ],
+    "results": [
+      {
+        "id": "traditionalAfterTax",
+        "label": "Traditional After-Tax",
+        "format": "currency"
+      },
+      {
+        "id": "rothAfterTax",
+        "label": "Roth After-Tax",
+        "format": "currency"
+      },
+      {
+        "id": "recommendation",
+        "label": "Recommendation",
+        "format": "text"
+      }
+    ]
+  },
+  "retirement-income-calculator": {
+    "slug": "retirement-income-calculator",
+    "category": "retirement-calculators",
+    "title": "Retirement Income Calculator",
+    "metaDescription": "Estimate your monthly retirement income from savings, Social Security, and pensions. Plan your retirement budget.",
+    "h1": "Retirement Income Calculator - Monthly Income Estimator",
+    "introduction": "Plan your retirement budget with confidence using our income calculator. Estimate your total monthly retirement income from all sources.",
+    "relatedCalculators": [
+      "retirement-savings-calculator",
+      "social-security-calculator",
+      "401k-calculator"
+    ],
+    "formulaFile": "retirement-income-formula.js",
+    "uiFile": "retirement-income-calculator.js",
+    "faqs": [
+      {
+        "question": "How much retirement income will I need?",
+        "answer": "Most retirees need 70-80% of pre-retirement income."
+      },
+      {
+        "question": "When should I take Social Security?",
+        "answer": "You can start at 62, but waiting until full retirement age or 70 maximizes your benefit."
+      },
+      {
+        "question": "What is a safe withdrawal rate?",
+        "answer": "The 4% rule is commonly used."
+      }
+    ],
+    "icon": "\ud83d\udcb5",
+    "path": "/us/retirement-calculators/retirement-income-calculator.html",
+    "inputs": [
+      {
+        "id": "retirementSavings",
+        "label": "Retirement Savings",
+        "type": "currency",
+        "default": "1000000"
+      },
+      {
+        "id": "socialSecurity",
+        "label": "Monthly Social Security",
+        "type": "currency",
+        "default": "2000"
+      },
+      {
+        "id": "pension",
+        "label": "Monthly Pension",
+        "type": "currency",
+        "default": "0"
+      },
+      {
+        "id": "otherIncome",
+        "label": "Other Monthly Income",
+        "type": "currency",
+        "default": "0"
+      },
+      {
+        "id": "withdrawalRate",
+        "label": "Withdrawal Rate",
+        "type": "percent",
+        "default": "4"
+      }
+    ],
+    "results": [
+      {
+        "id": "totalMonthlyIncome",
+        "label": "Total Monthly Income",
+        "format": "currency"
+      },
+      {
+        "id": "savingsWithdrawal",
+        "label": "Savings Withdrawal",
+        "format": "currency"
+      },
+      {
+        "id": "annualIncome",
+        "label": "Annual Income",
+        "format": "currency"
+      }
+    ]
+  },
+  "social-security-calculator": {
+    "slug": "social-security-calculator",
+    "category": "retirement-calculators",
+    "title": "Social Security Calculator",
+    "metaDescription": "Estimate your Social Security benefits based on earnings history and retirement age. Compare filing strategies.",
+    "h1": "Social Security Calculator - Benefit Estimator",
+    "introduction": "Estimate your future Social Security benefits with our accurate calculator. Input your earnings history and desired retirement age to see your projected monthly benefit.",
+    "relatedCalculators": [
+      "retirement-income-calculator",
+      "retirement-savings-calculator",
+      "401k-calculator"
+    ],
+    "formulaFile": "social-security-formula.js",
+    "uiFile": "social-security-calculator.js",
+    "faqs": [
+      {
+        "question": "How are Social Security benefits calculated?",
+        "answer": "Benefits are based on your 35 highest-earning years, adjusted for inflation."
+      },
+      {
+        "question": "What is full retirement age?",
+        "answer": "Full retirement age is 66-67 depending on your birth year."
+      },
+      {
+        "question": "Can I work and collect Social Security?",
+        "answer": "Yes, but if under full retirement age, earnings above a limit may reduce your benefits."
+      }
+    ],
+    "icon": "\ud83d\udee1\ufe0f",
+    "path": "/us/retirement-calculators/social-security-calculator.html",
+    "inputs": [
+      {
+        "id": "aime",
+        "label": "Average Indexed Monthly Earnings",
+        "type": "currency",
+        "default": "5000"
+      },
+      {
+        "id": "claimingAge",
+        "label": "Claiming Age",
+        "type": "select",
+        "options": [
+          "62",
+          "63",
+          "64",
+          "65",
+          "66",
+          "67",
+          "68",
+          "69",
+          "70"
+        ],
+        "default": "67"
+      },
+      {
+        "id": "fra",
+        "label": "Full Retirement Age",
+        "type": "select",
+        "options": [
+          "66",
+          "67"
+        ],
+        "default": "67"
+      }
+    ],
+    "results": [
+      {
+        "id": "monthlyBenefit",
+        "label": "Monthly Benefit",
+        "format": "currency"
+      },
+      {
+        "id": "annualBenefit",
+        "label": "Annual Benefit",
+        "format": "currency"
+      },
+      {
+        "id": "age62Benefit",
+        "label": "Age 62 Benefit",
+        "format": "currency"
+      },
+      {
+        "id": "fraBenefit",
+        "label": "FRA Benefit",
+        "format": "currency"
+      },
+      {
+        "id": "age70Benefit",
+        "label": "Age 70 Benefit",
+        "format": "currency"
+      }
+    ]
+  },
+  "budget-calculator": {
+    "slug": "budget-calculator",
+    "category": "personal-finance",
+    "title": "Budget Calculator",
+    "metaDescription": "Create a personalized budget based on your income and expenses. Use the 50/30/20 rule or customize your own.",
+    "h1": "Budget Calculator - Create Your Personal Budget",
+    "introduction": "Take control of your finances with our comprehensive budget calculator. Input your income and expenses to create a personalized spending plan.",
+    "relatedCalculators": [
+      "debt-to-income-calculator",
+      "emergency-fund-calculator",
+      "net-worth-calculator"
+    ],
+    "formulaFile": "budget-formula.js",
+    "uiFile": "budget-calculator.js",
+    "faqs": [
+      {
+        "question": "What is the 50/30/20 rule?",
+        "answer": "Allocate 50% to needs, 30% to wants, and 20% to savings and debt repayment."
+      },
+      {
+        "question": "How do I track my expenses?",
+        "answer": "Use budgeting apps, spreadsheets, or review bank statements."
+      },
+      {
+        "question": "What if my expenses exceed income?",
+        "answer": "Look for areas to cut discretionary spending or increase income."
+      }
+    ],
+    "icon": "\ud83d\udccb",
+    "path": "/us/personal-finance/budget-calculator.html",
+    "inputs": [
+      {
+        "id": "monthlyIncome",
+        "label": "Monthly Income",
+        "type": "currency",
+        "default": "5000"
+      },
+      {
+        "id": "housing",
+        "label": "Housing",
+        "type": "currency",
+        "default": "1500"
+      },
+      {
+        "id": "utilities",
+        "label": "Utilities",
+        "type": "currency",
+        "default": "200"
+      },
+      {
+        "id": "groceries",
+        "label": "Groceries",
+        "type": "currency",
+        "default": "500"
+      },
+      {
+        "id": "transportation",
+        "label": "Transportation",
+        "type": "currency",
+        "default": "400"
+      },
+      {
+        "id": "insurance",
+        "label": "Insurance",
+        "type": "currency",
+        "default": "300"
+      },
+      {
+        "id": "debtPayments",
+        "label": "Debt Payments",
+        "type": "currency",
+        "default": "400"
+      },
+      {
+        "id": "entertainment",
+        "label": "Entertainment",
+        "type": "currency",
+        "default": "300"
+      },
+      {
+        "id": "savings",
+        "label": "Savings",
+        "type": "currency",
+        "default": "500"
+      }
+    ],
+    "results": [
+      {
+        "id": "needsAmount",
+        "label": "Needs (50%)",
+        "format": "currency"
+      },
+      {
+        "id": "wantsAmount",
+        "label": "Wants (30%)",
+        "format": "currency"
+      },
+      {
+        "id": "savingsAmount",
+        "label": "Savings (20%)",
+        "format": "currency"
+      },
+      {
+        "id": "totalExpenses",
+        "label": "Total Expenses",
+        "format": "currency"
+      },
+      {
+        "id": "remaining",
+        "label": "Remaining",
+        "format": "currency"
+      }
+    ]
+  },
+  "debt-payoff-calculator": {
+    "slug": "debt-payoff-calculator",
+    "category": "personal-finance",
+    "title": "Debt Payoff Calculator",
+    "metaDescription": "Create a debt elimination plan using avalanche or snowball method. Calculate payoff dates and interest savings.",
+    "h1": "Debt Payoff Calculator - Eliminate Debt Faster",
+    "introduction": "Get out of debt faster with our strategic payoff calculator. Compare the debt avalanche and debt snowball methods.",
+    "relatedCalculators": [
+      "debt-to-income-calculator",
+      "loan-payoff-calculator",
+      "credit-card-payoff-calculator"
+    ],
+    "formulaFile": "debt-payoff-formula.js",
+    "uiFile": "debt-payoff-calculator.js",
+    "faqs": [
+      {
+        "question": "What is the debt snowball method?",
+        "answer": "Pay minimums on all debts, then put extra money toward the smallest balance."
+      },
+      {
+        "question": "What is the debt avalanche method?",
+        "answer": "Pay minimums on all debts, then put extra money toward the highest interest rate."
+      },
+      {
+        "question": "Which method is better?",
+        "answer": "Avalanche saves more money, but snowball provides psychological wins."
+      }
+    ],
+    "icon": "\ud83d\udcb3",
+    "path": "/us/personal-finance/debt-payoff-calculator.html",
+    "inputs": [
+      {
+        "id": "debt1Balance",
+        "label": "Debt 1 Balance",
+        "type": "currency",
+        "default": "5000"
+      },
+      {
+        "id": "debt1Rate",
+        "label": "Debt 1 Rate",
+        "type": "percent",
+        "default": "18"
+      },
+      {
+        "id": "debt1Payment",
+        "label": "Debt 1 Payment",
+        "type": "currency",
+        "default": "150"
+      },
+      {
+        "id": "debt2Balance",
+        "label": "Debt 2 Balance",
+        "type": "currency",
+        "default": "10000"
+      },
+      {
+        "id": "debt2Rate",
+        "label": "Debt 2 Rate",
+        "type": "percent",
+        "default": "12"
+      },
+      {
+        "id": "debt2Payment",
+        "label": "Debt 2 Payment",
+        "type": "currency",
+        "default": "200"
+      },
+      {
+        "id": "extraPayment",
+        "label": "Extra Payment",
+        "type": "currency",
+        "default": "200"
+      }
+    ],
+    "results": [
+      {
+        "id": "avalancheMonths",
+        "label": "Avalanche Payoff",
+        "format": "months"
+      },
+      {
+        "id": "snowballMonths",
+        "label": "Snowball Payoff",
+        "format": "months"
+      },
+      {
+        "id": "interestSaved",
+        "label": "Interest Saved",
+        "format": "currency"
+      },
+      {
+        "id": "recommendedMethod",
+        "label": "Recommended",
+        "format": "text"
+      }
+    ]
+  },
+  "credit-card-payoff-calculator": {
+    "slug": "credit-card-payoff-calculator",
+    "category": "personal-finance",
+    "title": "Credit Card Payoff Calculator",
+    "metaDescription": "Calculate how long it will take to pay off credit card debt. See the impact of increasing monthly payments.",
+    "h1": "Credit Card Payoff Calculator - Eliminate Credit Card Debt",
+    "introduction": "Break free from credit card debt with our payoff calculator. See exactly how long it will take to pay off your balances.",
+    "relatedCalculators": [
+      "debt-payoff-calculator",
+      "debt-to-income-calculator",
+      "loan-payoff-calculator"
+    ],
+    "formulaFile": "credit-card-payoff-formula.js",
+    "uiFile": "credit-card-payoff-calculator.js",
+    "faqs": [
+      {
+        "question": "How is credit card interest calculated?",
+        "answer": "Most cards use daily periodic rate multiplied by average daily balance."
+      },
+      {
+        "question": "Should I pay more than the minimum?",
+        "answer": "Absolutely. Paying only minimums can take decades and cost thousands."
+      },
+      {
+        "question": "Should I transfer to a 0% APR card?",
+        "answer": "Balance transfers can save money if you pay off before the promotional rate expires."
+      }
+    ],
+    "icon": "\ud83d\udcb3",
+    "path": "/us/personal-finance/credit-card-payoff-calculator.html",
+    "inputs": [
+      {
+        "id": "balance",
+        "label": "Current Balance",
+        "type": "currency",
+        "default": "5000"
+      },
+      {
+        "id": "apr",
+        "label": "APR",
+        "type": "percent",
+        "default": "20"
+      },
+      {
+        "id": "monthlyPayment",
+        "label": "Monthly Payment",
+        "type": "currency",
+        "default": "200"
+      }
+    ],
+    "results": [
+      {
+        "id": "payoffTime",
+        "label": "Payoff Time",
+        "format": "months"
+      },
+      {
+        "id": "totalInterest",
+        "label": "Total Interest",
+        "format": "currency"
+      },
+      {
+        "id": "totalPaid",
+        "label": "Total Paid",
+        "format": "currency"
+      }
+    ]
+  },
+  "net-worth-calculator": {
+    "slug": "net-worth-calculator",
+    "category": "personal-finance",
+    "title": "Net Worth Calculator",
+    "metaDescription": "Calculate your net worth by comparing assets and liabilities. Track your financial progress over time.",
+    "h1": "Net Worth Calculator - Know Your Financial Position",
+    "introduction": "Understand your complete financial picture with our net worth calculator. Input all your assets and liabilities to calculate your net worth.",
+    "relatedCalculators": [
+      "budget-calculator",
+      "emergency-fund-calculator",
+      "debt-to-income-calculator"
+    ],
+    "formulaFile": "net-worth-formula.js",
+    "uiFile": "net-worth-calculator.js",
+    "faqs": [
+      {
+        "question": "What is net worth?",
+        "answer": "Net worth is the difference between what you own (assets) and what you owe (liabilities)."
+      },
+      {
+        "question": "What is a good net worth?",
+        "answer": "Net worth varies by age. A common benchmark is having your annual salary saved by age 30."
+      },
+      {
+        "question": "How often should I calculate net worth?",
+        "answer": "Monthly or quarterly tracking helps you see trends."
+      }
+    ],
+    "icon": "\ud83d\udc8e",
+    "path": "/us/personal-finance/net-worth-calculator.html",
+    "inputs": [
+      {
+        "id": "cash",
+        "label": "Cash & Checking",
+        "type": "currency",
+        "default": "10000"
+      },
+      {
+        "id": "investments",
+        "label": "Investments",
+        "type": "currency",
+        "default": "50000"
+      },
+      {
+        "id": "retirement",
+        "label": "Retirement Accounts",
+        "type": "currency",
+        "default": "100000"
+      },
+      {
+        "id": "realEstate",
+        "label": "Real Estate",
+        "type": "currency",
+        "default": "300000"
+      },
+      {
+        "id": "vehicles",
+        "label": "Vehicles",
+        "type": "currency",
+        "default": "20000"
+      },
+      {
+        "id": "mortgage",
+        "label": "Mortgage",
+        "type": "currency",
+        "default": "250000"
+      },
+      {
+        "id": "carLoans",
+        "label": "Car Loans",
+        "type": "currency",
+        "default": "15000"
+      },
+      {
+        "id": "studentLoans",
+        "label": "Student Loans",
+        "type": "currency",
+        "default": "30000"
+      },
+      {
+        "id": "creditCards",
+        "label": "Credit Cards",
+        "type": "currency",
+        "default": "5000"
+      }
+    ],
+    "results": [
+      {
+        "id": "totalAssets",
+        "label": "Total Assets",
+        "format": "currency"
+      },
+      {
+        "id": "totalLiabilities",
+        "label": "Total Liabilities",
+        "format": "currency"
+      },
+      {
+        "id": "netWorth",
+        "label": "Net Worth",
+        "format": "currency"
+      },
+      {
+        "id": "debtToAsset",
+        "label": "Debt to Asset Ratio",
+        "format": "percent"
+      }
+    ]
+  },
+  "emergency-fund-calculator": {
+    "slug": "emergency-fund-calculator",
+    "category": "personal-finance",
+    "title": "Emergency Fund Calculator",
+    "metaDescription": "Calculate how much emergency savings you need. Factor in monthly expenses and job security for personalized results.",
+    "h1": "Emergency Fund Calculator - Build Your Safety Net",
+    "introduction": "Protect yourself from financial emergencies with our savings calculator. Determine how much you should save based on your monthly expenses.",
+    "relatedCalculators": [
+      "budget-calculator",
+      "savings-goal-calculator",
+      "net-worth-calculator"
+    ],
+    "formulaFile": "emergency-fund-formula.js",
+    "uiFile": "emergency-fund-calculator.js",
+    "faqs": [
+      {
+        "question": "How much should I have in an emergency fund?",
+        "answer": "Most experts recommend 3-6 months of essential expenses."
+      },
+      {
+        "question": "Where should I keep my emergency fund?",
+        "answer": "High-yield savings accounts offer liquidity and some interest."
+      },
+      {
+        "question": "What counts as an emergency?",
+        "answer": "True emergencies include job loss, medical emergencies, and essential repairs."
+      }
+    ],
+    "icon": "\ud83d\udee1\ufe0f",
+    "path": "/us/personal-finance/emergency-fund-calculator.html",
+    "inputs": [
+      {
+        "id": "monthlyExpenses",
+        "label": "Monthly Expenses",
+        "type": "currency",
+        "default": "4000"
+      },
+      {
+        "id": "jobStability",
+        "label": "Job Stability (1-5)",
+        "type": "select",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "default": "3"
+      },
+      {
+        "id": "dependents",
+        "label": "Number of Dependents",
+        "type": "number",
+        "default": "2"
+      },
+      {
+        "id": "dualIncome",
+        "label": "Dual Income Household",
+        "type": "checkbox",
+        "default": "false"
+      },
+      {
+        "id": "currentSavings",
+        "label": "Current Savings",
+        "type": "currency",
+        "default": "5000"
+      }
+    ],
+    "results": [
+      {
+        "id": "recommendedAmount",
+        "label": "Recommended Amount",
+        "format": "currency"
+      },
+      {
+        "id": "minimumAmount",
+        "label": "Minimum (3 months)",
+        "format": "currency"
+      },
+      {
+        "id": "idealAmount",
+        "label": "Ideal (6 months)",
+        "format": "currency"
+      },
+      {
+        "id": "monthsNeeded",
+        "label": "Months Needed",
+        "format": "number"
+      }
+    ]
+  }
+}

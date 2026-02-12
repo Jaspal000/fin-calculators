@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tax-Deferred Growth Calculator | Financial Calculators</title>
+  <meta name="description" content="Compare taxable vs tax-deferred investment growth. See how 401k and IRA tax advantages compound over time.">
+  <link rel="canonical" href="https://financialcalculators.com/us/tax-calculators/tax-deferred-calculator.html">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Tax-Deferred Growth Calculator",
+  "description": "Compare taxable vs tax-deferred investment growth. See how 401k and IRA tax advantages compound over time.",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+</head>
+<body>
+  <main class="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/index.html">Home</a>
+      <span class="breadcrumb-separator">/</span>
+      <a href="/us/tax-calculators/">Tax Calculators</a>
+      <span class="breadcrumb-separator">/</span>
+      <span class="breadcrumb-current">Tax-Deferred Growth Calculator</span>
+    </nav>
+
+      <header class="page-header">
+        <h1>Tax-Deferred Growth Calculator - 401k & IRA Benefits</h1>
+        <p>Free calculator with instant results. No signup required.</p>
+      </header>
+
+      <!-- Above-fold Ad Placeholder -->
+      <div class="ad-placeholder ad-above-fold">
+        <span>Advertisement</span>
+        Ad space available
+      </div>
+
+      <div class="calculator-layout">
+        <!-- Calculator Form -->
+        <div class="card" id="taxdeferredcalculator">
+          <div class="card-header">
+            <h2 class="card-title">📉 Tax-Deferred Growth Calculator</h2>
+            <p class="card-subtitle">Enter your details below</p>
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label class="form-label" for="initialInvestment">Initial Investment</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input type="number" id="initialInvestment" class="form-input" value="10000" min="0" step="100">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="monthlyContribution">Monthly Contribution</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input type="number" id="monthlyContribution" class="form-input" value="500" min="0" step="100">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="annualReturn">Annual Return</label>
+              <div class="input-group">
+                <input type="number" id="annualReturn" class="form-input has-suffix" value="7" min="0" max="100" step="0.01">
+                <span class="input-suffix">%</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="years">Years</label>
+              <input type="number" id="years" class="form-input" value="30" min="0">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="taxRate">Tax Rate</label>
+              <div class="input-group">
+                <input type="number" id="taxRate" class="form-input has-suffix" value="22" min="0" max="100" step="0.01">
+                <span class="input-suffix">%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results-card">
+          <h3 class="results-title">Results</h3>
+          <div class="results-breakdown">
+              <div class="breakdown-item">
+                <span class="breakdown-label">Taxable Account</span>
+                <span class="breakdown-value" id="taxableBalance">$0.00</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">Traditional 401k/IRA</span>
+                <span class="breakdown-value" id="traditionalBalance">$0.00</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">Roth Account</span>
+                <span class="breakdown-value" id="rothBalance">$0.00</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">Tax-Deferred Advantage</span>
+                <span class="breakdown-value" id="advantage">$0.00</span>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mid-content Ad Placeholder -->
+      <div class="ad-placeholder ad-mid-content">
+        <span>Advertisement</span>
+        Ad space available
+      </div>
+
+      <!-- SEO Content -->
+      <section class="seo-content">
+        <h2>About Tax-Deferred Growth Calculator</h2>
+        <p>Discover the power of tax-deferred growth with our calculator. Compare how your investments grow in taxable accounts versus tax-deferred accounts like 401(k)s and IRAs.</p>
+        <p>Use this calculator to make informed financial decisions. Adjust the inputs to see how different scenarios affect your results. All calculations are performed locally in your browser for privacy and security.</p>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="seo-content faq-section">
+        <h2>Frequently Asked Questions</h2>
+          <div class="faq-item">
+            <h3 class="faq-question">What does tax-deferred mean?</h3>
+            <p class="faq-answer">Tax-deferred means you don't pay taxes on contributions or growth until withdrawal.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">How much can tax deferral save me?</h3>
+            <p class="faq-answer">Tax deferral can significantly increase your ending balance due to compounding.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">Should I choose Roth or Traditional?</h3>
+            <p class="faq-answer">Traditional may be better if you expect lower taxes in retirement.</p>
+          </div>
+      </section>
+
+      <!-- Related Calculators -->
+      <section class="related-section">
+        <h2>Related Calculators</h2>
+        <div class="related-grid">
+          <a href="/us/retirement-calculators/retirement-savings-calculator.html" class="related-card">
+            <div class="related-icon">🏖️</div>
+            <div class="related-info">
+              <h4>Retirement Savings Calculator</h4>
+              <p>Calculate how much you need to save for retirement. Project ...</p>
+            </div>
+          </a>
+          <a href="/us/retirement-calculators/401k-calculator.html" class="related-card">
+            <div class="related-icon">💼</div>
+            <div class="related-info">
+              <h4>401k Calculator</h4>
+              <p>Project your 401k balance at retirement. Calculate employer ...</p>
+            </div>
+          </a>
+          <a href="/us/retirement-calculators/ira-calculator.html" class="related-card">
+            <div class="related-icon">🏛️</div>
+            <div class="related-info">
+              <h4>IRA Calculator</h4>
+              <p>Compare Traditional vs Roth IRA growth and tax benefits. Cal...</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Bottom Ad Placeholder -->
+      <div class="ad-placeholder ad-bottom">
+        <span>Advertisement</span>
+        Ad space available
+      </div>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="../js/main.js"></script>
+  <script src="../js/formulas/tax-deferred-formula.js"></script>
+  <script src="../js/calculators/tax-deferred-calculator.js"></script>
+</body>
+</html>

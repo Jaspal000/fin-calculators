@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Refinance Calculator | Financial Calculators</title>
+  <meta name="description" content="Determine if refinancing your mortgage or loan makes financial sense. Calculate break-even points and potential savings.">
+  <link rel="canonical" href="https://financialcalculators.com/us/loan-calculators/refinance-calculator.html">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Refinance Calculator",
+  "description": "Determine if refinancing your mortgage or loan makes financial sense. Calculate break-even points and potential savings.",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+</head>
+<body>
+  <main class="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/index.html">Home</a>
+      <span class="breadcrumb-separator">/</span>
+      <a href="/us/loan-calculators/">Loan Calculators</a>
+      <span class="breadcrumb-separator">/</span>
+      <span class="breadcrumb-current">Refinance Calculator</span>
+    </nav>
+
+      <header class="page-header">
+        <h1>Refinance Calculator - Should You Refinance?</h1>
+        <p>Free calculator with instant results. No signup required.</p>
+      </header>
+
+      <!-- Above-fold Ad Placeholder -->
+      <div class="ad-placeholder ad-above-fold">
+        <span>Advertisement</span>
+        Ad space available
+      </div>
+
+      <div class="calculator-layout">
+        <!-- Calculator Form -->
+        <div class="card" id="refinancecalculator">
+          <div class="card-header">
+            <h2 class="card-title">🔄 Refinance Calculator</h2>
+            <p class="card-subtitle">Enter your details below</p>
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label class="form-label" for="currentBalance">Current Balance</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input type="number" id="currentBalance" class="form-input" value="300000" min="0" step="100">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="currentRate">Current Rate</label>
+              <div class="input-group">
+                <input type="number" id="currentRate" class="form-input has-suffix" value="7" min="0" max="100" step="0.01">
+                <span class="input-suffix">%</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="currentPayment">Current Payment</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input type="number" id="currentPayment" class="form-input" value="2000" min="0" step="100">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="newRate">New Rate</label>
+              <div class="input-group">
+                <input type="number" id="newRate" class="form-input has-suffix" value="5.5" min="0" max="100" step="0.01">
+                <span class="input-suffix">%</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="newTerm">New Term (years)</label>
+              <select id="newTerm" class="form-select">
+              <option value="15">15</option>
+              <option value="20">20</option>
+              <option value="30" selected>30</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="closingCosts">Closing Costs</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input type="number" id="closingCosts" class="form-input" value="5000" min="0" step="100">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results-card">
+          <h3 class="results-title">Results</h3>
+          <div class="results-breakdown">
+              <div class="breakdown-item">
+                <span class="breakdown-label">New Payment</span>
+                <span class="breakdown-value" id="newMonthlyPayment">$0.00</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">Monthly Savings</span>
+                <span class="breakdown-value" id="monthlySavings">$0.00</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">Break-even (months)</span>
+                <span class="breakdown-value" id="breakEvenMonths">$0.00</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">Interest Savings</span>
+                <span class="breakdown-value" id="totalInterestSavings">$0.00</span>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mid-content Ad Placeholder -->
+      <div class="ad-placeholder ad-mid-content">
+        <span>Advertisement</span>
+        Ad space available
+      </div>
+
+      <!-- SEO Content -->
+      <section class="seo-content">
+        <h2>About Refinance Calculator</h2>
+        <p>Wondering if refinancing is right for you? Our refinance calculator helps you determine your break-even point and potential savings. Compare your current loan terms with new offers to see how much you could save.</p>
+        <p>Use this calculator to make informed financial decisions. Adjust the inputs to see how different scenarios affect your results. All calculations are performed locally in your browser for privacy and security.</p>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="seo-content faq-section">
+        <h2>Frequently Asked Questions</h2>
+          <div class="faq-item">
+            <h3 class="faq-question">When should I refinance my mortgage?</h3>
+            <p class="faq-answer">Consider refinancing when rates drop at least 0.5-1% below your current rate.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">What are typical closing costs?</h3>
+            <p class="faq-answer">Closing costs typically range from 2% to 6% of the loan amount.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">How long does it take to break even?</h3>
+            <p class="faq-answer">Break-even periods typically range from 2-5 years.</p>
+          </div>
+      </section>
+
+      <!-- Related Calculators -->
+      <section class="related-section">
+        <h2>Related Calculators</h2>
+        <div class="related-grid">
+          <a href="/us/loan-calculators/mortgage-calculator.html" class="related-card">
+            <div class="related-icon">🏠</div>
+            <div class="related-info">
+              <h4>Mortgage Calculator</h4>
+              <p>Calculate your monthly mortgage payments, total interest, an...</p>
+            </div>
+          </a>
+          <a href="/us/loan-calculators/home-equity-calculator.html" class="related-card">
+            <div class="related-icon">🏡</div>
+            <div class="related-info">
+              <h4>Home Equity Calculator</h4>
+              <p>Calculate your available home equity and potential HELOC or ...</p>
+            </div>
+          </a>
+          <a href="/us/loan-calculators/loan-payoff-calculator.html" class="related-card">
+            <div class="related-icon">💰</div>
+            <div class="related-info">
+              <h4>Loan Payoff Calculator</h4>
+              <p>Discover how extra payments can accelerate your loan payoff....</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Bottom Ad Placeholder -->
+      <div class="ad-placeholder ad-bottom">
+        <span>Advertisement</span>
+        Ad space available
+      </div>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="../js/main.js"></script>
+  <script src="../js/formulas/refinance-formula.js"></script>
+  <script src="../js/calculators/refinance-calculator.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Equity Calculator | Financial Calculators</title>
+  <meta name="description" content="Calculate your available home equity and potential HELOC or home equity loan amounts. Free home equity calculator.">
+  <link rel="canonical" href="https://financialcalculators.com/us/loan-calculators/home-equity-calculator.html">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Home Equity Calculator",
+  "description": "Calculate your available home equity and potential HELOC or home equity loan amounts. Free home equity calculator.",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+</head>
+<body>
+  <main class="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/index.html">Home</a>
+      <span class="breadcrumb-separator">/</span>
+      <a href="/us/loan-calculators/">Loan Calculators</a>
+      <span class="breadcrumb-separator">/</span>
+      <span class="breadcrumb-current">Home Equity Calculator</span>
+    </nav>
+
+      <header class="page-header">
+        <h1>Home Equity Calculator - Access Your Home's Value</h1>
+        <p>Free calculator with instant results. No signup required.</p>
+      </header>
+
+      <!-- Above-fold Ad Placeholder -->
+      <div class="ad-placeholder ad-above-fold">
+        <span>Advertisement</span>
+        Ad space available
+      </div>
+
+      <div class="calculator-layout">
+        <!-- Calculator Form -->
+        <div class="card" id="homeequitycalculator">
+          <div class="card-header">
+            <h2 class="card-title">🏡 Home Equity Calculator</h2>
+            <p class="card-subtitle">Enter your details below</p>
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label class="form-label" for="homeValue">Home Value</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input type="number" id="homeValue" class="form-input" value="500000" min="0" step="100">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="mortgageBalance">Mortgage Balance</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input type="number" id="mortgageBalance" class="form-input" value="350000" min="0" step="100">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="maxLTV">Max LTV %</label>
+              <div class="input-group">
+                <input type="number" id="maxLTV" class="form-input has-suffix" value="80" min="0" max="100" step="0.01">
+                <span class="input-suffix">%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results-card">
+          <h3 class="results-title">Results</h3>
+          <div class="results-breakdown">
+              <div class="breakdown-item">
+                <span class="breakdown-label">Total Equity</span>
+                <span class="breakdown-value" id="totalEquity">$0.00</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">Equity %</span>
+                <span class="breakdown-value" id="equityPercentage">$0.00</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">Available Equity</span>
+                <span class="breakdown-value" id="availableEquity">$0.00</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">Current LTV</span>
+                <span class="breakdown-value" id="currentLTV">$0.00</span>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mid-content Ad Placeholder -->
+      <div class="ad-placeholder ad-mid-content">
+        <span>Advertisement</span>
+        Ad space available
+      </div>
+
+      <!-- SEO Content -->
+      <section class="seo-content">
+        <h2>About Home Equity Calculator</h2>
+        <p>Discover how much equity you've built in your home with our home equity calculator. This tool estimates your current home value minus your mortgage balance to show available equity.</p>
+        <p>Use this calculator to make informed financial decisions. Adjust the inputs to see how different scenarios affect your results. All calculations are performed locally in your browser for privacy and security.</p>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="seo-content faq-section">
+        <h2>Frequently Asked Questions</h2>
+          <div class="faq-item">
+            <h3 class="faq-question">How is home equity calculated?</h3>
+            <p class="faq-answer">Home equity is your home's current market value minus your outstanding mortgage balance.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">How much equity can I borrow?</h3>
+            <p class="faq-answer">Most lenders allow you to borrow up to 80-85% of your home's value minus your mortgage balance.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">What can I use home equity for?</h3>
+            <p class="faq-answer">Common uses include home improvements, debt consolidation, and education expenses.</p>
+          </div>
+      </section>
+
+      <!-- Related Calculators -->
+      <section class="related-section">
+        <h2>Related Calculators</h2>
+        <div class="related-grid">
+          <a href="/us/loan-calculators/mortgage-calculator.html" class="related-card">
+            <div class="related-icon">🏠</div>
+            <div class="related-info">
+              <h4>Mortgage Calculator</h4>
+              <p>Calculate your monthly mortgage payments, total interest, an...</p>
+            </div>
+          </a>
+          <a href="/us/loan-calculators/refinance-calculator.html" class="related-card">
+            <div class="related-icon">🔄</div>
+            <div class="related-info">
+              <h4>Refinance Calculator</h4>
+              <p>Determine if refinancing your mortgage or loan makes financi...</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Bottom Ad Placeholder -->
+      <div class="ad-placeholder ad-bottom">
+        <span>Advertisement</span>
+        Ad space available
+      </div>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="../js/main.js"></script>
+  <script src="../js/formulas/home-equity-formula.js"></script>
+  <script src="../js/calculators/home-equity-calculator.js"></script>
+</body>
+</html>

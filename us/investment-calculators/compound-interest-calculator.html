@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compound Interest Calculator | Financial Calculators</title>
+  <meta name="description" content="See how compound interest grows your money over time. Calculate investment growth with regular contributions.">
+  <link rel="canonical" href="https://financialcalculators.com/us/investment-calculators/compound-interest-calculator.html">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Compound Interest Calculator",
+  "description": "See how compound interest grows your money over time. Calculate investment growth with regular contributions.",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+</head>
+<body>
+  <main class="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/index.html">Home</a>
+      <span class="breadcrumb-separator">/</span>
+      <a href="/us/investment-calculators/">Investment Calculators</a>
+      <span class="breadcrumb-separator">/</span>
+      <span class="breadcrumb-current">Compound Interest Calculator</span>
+    </nav>
+
+      <header class="page-header">
+        <h1>Compound Interest Calculator - The Power of Compounding</h1>
+        <p>Free calculator with instant results. No signup required.</p>
+      </header>
+
+      <!-- Above-fold Ad Placeholder -->
+      <div class="ad-placeholder ad-above-fold">
+        <span>Advertisement</span>
+        Ad space available
+      </div>
+
+      <div class="calculator-layout">
+        <!-- Calculator Form -->
+        <div class="card" id="compoundinterestcalculator">
+          <div class="card-header">
+            <h2 class="card-title">💹 Compound Interest Calculator</h2>
+            <p class="card-subtitle">Enter your details below</p>
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label class="form-label" for="initialInvestment">Initial Investment</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input type="number" id="initialInvestment" class="form-input" value="10000" min="0" step="100">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="monthlyContribution">Monthly Contribution</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input type="number" id="monthlyContribution" class="form-input" value="500" min="0" step="100">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="annualReturn">Annual Return</label>
+              <div class="input-group">
+                <input type="number" id="annualReturn" class="form-input has-suffix" value="7" min="0" max="100" step="0.01">
+                <span class="input-suffix">%</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="years">Years</label>
+              <input type="number" id="years" class="form-input" value="30" min="0">
+            </div>
+          </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results-card">
+          <h3 class="results-title">Results</h3>
+          <div class="results-breakdown">
+              <div class="breakdown-item">
+                <span class="breakdown-label">Final Balance</span>
+                <span class="breakdown-value" id="finalBalance">$0.00</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">Total Contributions</span>
+                <span class="breakdown-value" id="totalContributions">$0.00</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">Total Interest</span>
+                <span class="breakdown-value" id="totalInterest">$0.00</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">Years to Double</span>
+                <span class="breakdown-value" id="doublingTime">$0.00</span>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mid-content Ad Placeholder -->
+      <div class="ad-placeholder ad-mid-content">
+        <span>Advertisement</span>
+        Ad space available
+      </div>
+
+      <!-- SEO Content -->
+      <section class="seo-content">
+        <h2>About Compound Interest Calculator</h2>
+        <p>Experience the magic of compound interest with our powerful calculator. See how your money grows exponentially when you earn interest on your interest.</p>
+        <p>Use this calculator to make informed financial decisions. Adjust the inputs to see how different scenarios affect your results. All calculations are performed locally in your browser for privacy and security.</p>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="seo-content faq-section">
+        <h2>Frequently Asked Questions</h2>
+          <div class="faq-item">
+            <h3 class="faq-question">What is compound interest?</h3>
+            <p class="faq-answer">Compound interest is interest calculated on both the initial principal and accumulated interest.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">How often should interest compound?</h3>
+            <p class="faq-answer">More frequent compounding yields slightly higher returns.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">What is the rule of 72?</h3>
+            <p class="faq-answer">Divide 72 by your interest rate to estimate how many years it takes to double your money.</p>
+          </div>
+      </section>
+
+      <!-- Related Calculators -->
+      <section class="related-section">
+        <h2>Related Calculators</h2>
+        <div class="related-grid">
+          <a href="/us/investment-calculators/investment-return-calculator.html" class="related-card">
+            <div class="related-icon">📊</div>
+            <div class="related-info">
+              <h4>Investment Return Calculator</h4>
+              <p>Calculate total return, annualized return, and CAGR for your...</p>
+            </div>
+          </a>
+          <a href="/us/retirement-calculators/retirement-savings-calculator.html" class="related-card">
+            <div class="related-icon">🏖️</div>
+            <div class="related-info">
+              <h4>Retirement Savings Calculator</h4>
+              <p>Calculate how much you need to save for retirement. Project ...</p>
+            </div>
+          </a>
+          <a href="/us/tax-calculators/tax-deferred-calculator.html" class="related-card">
+            <div class="related-icon">📉</div>
+            <div class="related-info">
+              <h4>Tax-Deferred Growth Calculator</h4>
+              <p>Compare taxable vs tax-deferred investment growth. See how 4...</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Bottom Ad Placeholder -->
+      <div class="ad-placeholder ad-bottom">
+        <span>Advertisement</span>
+        Ad space available
+      </div>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="../js/main.js"></script>
+  <script src="../js/formulas/compound-interest-formula.js"></script>
+  <script src="../js/calculators/compound-interest-calculator.js"></script>
+</body>
+</html>

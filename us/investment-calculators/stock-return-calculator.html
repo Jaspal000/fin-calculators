@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Return Calculator | Financial Calculators</title>
+  <meta name="description" content="Calculate stock investment returns including dividends. Analyze buy-and-hold performance with dividend reinvestment.">
+  <link rel="canonical" href="https://financialcalculators.com/us/investment-calculators/stock-return-calculator.html">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Stock Return Calculator",
+  "description": "Calculate stock investment returns including dividends. Analyze buy-and-hold performance with dividend reinvestment.",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+</head>
+<body>
+  <main class="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/index.html">Home</a>
+      <span class="breadcrumb-separator">/</span>
+      <a href="/us/investment-calculators/">Investment Calculators</a>
+      <span class="breadcrumb-separator">/</span>
+      <span class="breadcrumb-current">Stock Return Calculator</span>
+    </nav>
+
+      <header class="page-header">
+        <h1>Stock Return Calculator - Analyze Stock Performance</h1>
+        <p>Free calculator with instant results. No signup required.</p>
+      </header>
+
+      <!-- Above-fold Ad Placeholder -->
+      <div class="ad-placeholder ad-above-fold">
+        <span>Advertisement</span>
+        Ad space available
+      </div>
+
+      <div class="calculator-layout">
+        <!-- Calculator Form -->
+        <div class="card" id="stockreturncalculator">
+          <div class="card-header">
+            <h2 class="card-title">📉 Stock Return Calculator</h2>
+            <p class="card-subtitle">Enter your details below</p>
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label class="form-label" for="purchasePrice">Purchase Price</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input type="number" id="purchasePrice" class="form-input" value="100" min="0" step="100">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="shares">Shares</label>
+              <input type="number" id="shares" class="form-input" value="100" min="0">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="currentPrice">Current Price</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input type="number" id="currentPrice" class="form-input" value="150" min="0" step="100">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="totalDividends">Total Dividends</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input type="number" id="totalDividends" class="form-input" value="200" min="0" step="100">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">
+                <input type="checkbox" id="dividendReinvested" > Dividends Reinvested
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results-card">
+          <h3 class="results-title">Results</h3>
+          <div class="results-breakdown">
+              <div class="breakdown-item">
+                <span class="breakdown-label">Initial Investment</span>
+                <span class="breakdown-value" id="initialInvestment">$0.00</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">Current Value</span>
+                <span class="breakdown-value" id="currentValue">$0.00</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">Capital Gain</span>
+                <span class="breakdown-value" id="capitalGain">$0.00</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">Total Return</span>
+                <span class="breakdown-value" id="totalReturn">$0.00</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">Return %</span>
+                <span class="breakdown-value" id="totalReturnPercent">$0.00</span>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mid-content Ad Placeholder -->
+      <div class="ad-placeholder ad-mid-content">
+        <span>Advertisement</span>
+        Ad space available
+      </div>
+
+      <!-- SEO Content -->
+      <section class="seo-content">
+        <h2>About Stock Return Calculator</h2>
+        <p>Analyze your stock investments with precision using our stock return calculator. Input your purchase price, number of shares, and dividends to calculate total returns.</p>
+        <p>Use this calculator to make informed financial decisions. Adjust the inputs to see how different scenarios affect your results. All calculations are performed locally in your browser for privacy and security.</p>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="seo-content faq-section">
+        <h2>Frequently Asked Questions</h2>
+          <div class="faq-item">
+            <h3 class="faq-question">How are stock returns calculated?</h3>
+            <p class="faq-answer">Stock returns include price appreciation plus dividends.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">Should I reinvest dividends?</h3>
+            <p class="faq-answer">Dividend reinvestment typically increases long-term returns through compounding.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">What affects stock prices?</h3>
+            <p class="faq-answer">Stock prices are affected by company performance, economic conditions, and market sentiment.</p>
+          </div>
+      </section>
+
+      <!-- Related Calculators -->
+      <section class="related-section">
+        <h2>Related Calculators</h2>
+        <div class="related-grid">
+          <a href="/us/investment-calculators/investment-return-calculator.html" class="related-card">
+            <div class="related-icon">📊</div>
+            <div class="related-info">
+              <h4>Investment Return Calculator</h4>
+              <p>Calculate total return, annualized return, and CAGR for your...</p>
+            </div>
+          </a>
+          <a href="/us/investment-calculators/dividend-calculator.html" class="related-card">
+            <div class="related-icon">💸</div>
+            <div class="related-info">
+              <h4>Dividend Calculator</h4>
+              <p>Calculate dividend income and yield for your portfolio. Proj...</p>
+            </div>
+          </a>
+          <a href="/us/tax-calculators/capital-gains-tax-calculator.html" class="related-card">
+            <div class="related-icon">📈</div>
+            <div class="related-info">
+              <h4>Capital Gains Tax Calculator</h4>
+              <p>Calculate capital gains tax on stocks, real estate, and inve...</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Bottom Ad Placeholder -->
+      <div class="ad-placeholder ad-bottom">
+        <span>Advertisement</span>
+        Ad space available
+      </div>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="../js/main.js"></script>
+  <script src="../js/formulas/stock-return-formula.js"></script>
+  <script src="../js/calculators/stock-return-calculator.js"></script>
+</body>
+</html>
